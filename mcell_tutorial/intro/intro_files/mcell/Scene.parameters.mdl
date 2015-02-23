@@ -1,0 +1,8 @@
+/* DEFINE PARAMETERS */
+iters = 1000    /* P1 Description  */
+dt = 1e-5    /* P2 Description  */
+dc1 = 1e-6    /* P3 Description  */
+dc2 = dc1/10    /* P4 Description  */
+fwd_rc = 1e8    /* P5 Description  */
+num_rel = 2000    /* P6 Description  */
+

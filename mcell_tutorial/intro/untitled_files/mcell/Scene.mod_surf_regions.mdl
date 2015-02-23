@@ -1,0 +1,8 @@
+MODIFY_SURFACE_REGIONS
+{
+  Plane[inside]
+  {
+    SURFACE_CLASS = absorb1_vol1
+  }
+}
+
