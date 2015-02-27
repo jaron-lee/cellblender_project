@@ -58,7 +58,7 @@ This section follows the paper written by Czech et. al. closely.
         \includegraphics[scale=0.5]{spinehead2.png}
         \end{figure}
 
-\item   Change view to see the sphere from the XZ view. (shortcut: 1 on numpad)
+\item   Change view to see the sphere from the 'Front' view. (shortcut: 1 on numpad)
 
 \item   Deselect the sphere (shortcut: a) and make it transparent (shortcut: z)
 
@@ -84,5 +84,25 @@ This section follows the paper written by Czech et. al. closely.
          
 \end{enumerate}
 
-\subsection{
+\subsection{Creating a presynaptic bouton}
+
+\begin{enumerate}
+    \item   Duplicate the \textit{spine.blend} file as \textit{bouton.blend}. in \textit{bouton.blend} deselect all (shortcut: a).
+    
+\item   Duplicate the spine head and rotate. First, switch to 'Front' view (shortcut: 1 on numpad). Duplicate (shortcut: Shift-d, Enter) and rotate 180 degrees (shortcut: r, 180, Enter). To separate the selection of the spine heads, press p and click 'Selection'.
+
+\item   Rename the item. Switch to 'Object Mode' (shortcut: Tab) and edit the name field to 'PresynapticBouton'.
+        \begin{figure}[H]
+        \includegraphics[scale=0.5]{bouton1.png}
+        \end{figure}
+
+\item   Shift and scale the bouton. Grab the object (shortcut: g), constrain movement to the z-axis (shortcut: z) and type 0.15, \textit{Enter} to move the object. Scale the object to be 20\% larger by typing s, 1.2, \textit{Enter}.
+
+\item   Creating the invagination. Switch to 'Edit Mode' (shortcut: Tab) and deselect everything (shortcut: a). Select the lowermost vertices (see below) and perform the 'Select Less' operation (shortcut: Control-Minus on numpad). Click the 'Extrude Region' button under 'Add' in 'Tools', press z to constrain, and type -0.075 to extrude it upwards.
+        \begin{figure}[H]
+        \includegraphics[scale=0.5]{bouton2.png}
+        \end{figure}
+
+\end{enumerate}
+
 \end{document}
