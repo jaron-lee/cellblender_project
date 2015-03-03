@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.7.31)  27 FEB 2015 15:30
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.7.31)  2 MAR 2015 23:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -219,26 +219,32 @@ File: bouton1.png Graphic file (type png)
  <use bouton1.png>
 Package pdftex.def Info: bouton1.png used on input line 96.
 (pdftex.def)             Requested size: 158.09023pt x 49.6855pt.
- [4 <./bouton1.png>] (./tutorial_doc.aux) ) 
+
+<bouton2.png, id=32, 444.66125pt x 422.57875pt>
+File: bouton2.png Graphic file (type png)
+ <use bouton2.png>
+Package pdftex.def Info: bouton2.png used on input line 103.
+(pdftex.def)             Requested size: 222.33008pt x 211.28885pt.
+ [4 <./bouton1.png> <./bouton2.png>] [5] (./tutorial_doc.aux) ) 
 Here is how much of TeX's memory you used:
- 1669 strings out of 493488
- 23952 string characters out of 3141326
+ 1674 strings out of 493488
+ 24026 string characters out of 3141326
  78818 words of memory out of 3000000
- 4971 multiletter control sequences out of 15000+200000
+ 4975 multiletter control sequences out of 15000+200000
  6464 words of font info for 23 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,7n,23p,466b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2012/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti10.pfb>
-Output written on tutorial_doc.pdf (4 pages, 157704 bytes).
+ 37i,7n,23p,552b,278s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texli
+ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texliv
+e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/
+2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
+12/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on tutorial_doc.pdf (5 pages, 182275 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
