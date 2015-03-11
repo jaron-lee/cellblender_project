@@ -1,0 +1,118 @@
+MCell initializing simulation...
+MCell[0]: random sequence 1
+MCell 3.2.1 (commit: 20a3dda  date: Mon, 10 Feb 2014 19:35:00 -0500)
+  Running on bg167.anu.edu.au at Wed Mar 11 23:35:24 2015
+
+  Copyright (C) 2006 - 2013 by
+    The National Center for Multiscale Modeling of Biological Systems,
+    The Salk Institute for Biological Studies, and
+    Pittsburgh Supercomputing Center, Carnegie Mellon University,
+
+
+**********************************************************************
+MCell development is supported by the NIGMS-funded (P41GM103712)
+National Center for Multiscale Modeling of Biological Systems (MMBioS)
+Please acknowledge MCell in your publications.
+**********************************************************************
+
+Defining molecules with the following theoretical average diffusion distances:
+  l_r_bar=0.225675833 um for Ca
+  l_r_bar=0 um for VGCC_C
+  l_r_bar=0 um for VGCC_O
+  l_r_bar=0 um for CaBS
+  l_r_bar=0 um for CaBS_Ca
+
+
+Reaction probabilities generated for the following reactions:
+	Probability 5.0000e-03 set for CaBS_Ca{1} -> Ca{1} CaBS{1} 
+
+Reaction probabilities generated for the following reactions:
+	Probability 2.9432e-02 set for Ca{1} + CaBS{1} -> CaBS_Ca{1} 
+
+Reaction probabilities generated for the following reactions:
+	Probability 1.0000e-02 set for VGCC_O{1} -> Ca{1} VGCC_O{1} 
+	Probability 5.0000e-03 set for VGCC_O{1} -> VGCC_C{1} 
+
+Reaction probabilities generated for the following reactions:
+	Probability 5.0000e+00 set for VGCC_C{1} -> VGCC_O{1} 
+
+Creating geometry (this may take some time)
+MCell: world bounding box in microns =
+         [ -0.299667209 -0.30031082 -2.23666 ] [ 0.300332934 0.299689353 3.30738425 ]
+Creating 125 subvolumes (5,5,5 per axis).
+Creating 1 memory partitions (1,1,1 per axis).
+Instantiating objects...
+Creating walls...
+Creating edges...
+Running simulation.
+Releasing 10 molecules VGCC_C ...  Released 10 VGCC_C from "Scene.vgcc_rel" at iteration 0.
+Releasing 100 molecules CaBS ...  Released 100 CaBS from "Scene.cabs_rel" at iteration 0.
+Iterations: 0 of 500 
+Iterations: 10 of 500  (3253.09 iter/sec)
+Iterations: 20 of 500  (2733.73 iter/sec)
+Iterations: 30 of 500  (2310 iter/sec)
+Iterations: 40 of 500  (2424.24 iter/sec)
+Iterations: 50 of 500  (1252.66 iter/sec)
+Iterations: 60 of 500  (1185.96 iter/sec)
+Iterations: 70 of 500  (1106.32 iter/sec)
+Iterations: 80 of 500  (928.764 iter/sec)
+Iterations: 90 of 500  (1601.54 iter/sec)
+Iterations: 100 of 500  (1711.74 iter/sec)
+Iterations: 110 of 500  (1827.15 iter/sec)
+Iterations: 120 of 500  (1592.36 iter/sec)
+Iterations: 130 of 500  (1115.7 iter/sec)
+Iterations: 140 of 500  (1152.07 iter/sec)
+Iterations: 150 of 500  (907.276 iter/sec)
+Iterations: 160 of 500  (977.613 iter/sec)
+Iterations: 170 of 500  (875.733 iter/sec)
+Iterations: 180 of 500  (951.837 iter/sec)
+Iterations: 190 of 500  (731.261 iter/sec)
+Iterations: 200 of 500  (853.534 iter/sec)
+Iterations: 210 of 500  (548.546 iter/sec)
+Iterations: 220 of 500  (815.86 iter/sec)
+Iterations: 230 of 500  (794.092 iter/sec)
+Iterations: 240 of 500  (578.336 iter/sec)
+Iterations: 250 of 500  (711.946 iter/sec)
+Iterations: 260 of 500  (872.905 iter/sec)
+Iterations: 270 of 500  (814.93 iter/sec)
+Iterations: 280 of 500  (175.901 iter/sec)
+Iterations: 290 of 500  (709.572 iter/sec)
+Iterations: 300 of 500  (455.976 iter/sec)
+Iterations: 310 of 500  (670.871 iter/sec)
+Iterations: 320 of 500  (469.572 iter/sec)
+Iterations: 330 of 500  (536.625 iter/sec)
+Iterations: 340 of 500  (535.963 iter/sec)
+Iterations: 350 of 500  (395.914 iter/sec)
+Iterations: 360 of 500  (467.53 iter/sec)
+Iterations: 370 of 500  (505.945 iter/sec)
+Iterations: 380 of 500  (135.934 iter/sec)
+Iterations: 390 of 500  (268.889 iter/sec)
+Iterations: 400 of 500  (154.808 iter/sec)
+Iterations: 410 of 500  (396.951 iter/sec)
+Iterations: 420 of 500  (409.903 iter/sec)
+Iterations: 430 of 500  (653.083 iter/sec)
+Iterations: 440 of 500  (461.382 iter/sec)
+Iterations: 450 of 500  (767.048 iter/sec)
+Iterations: 460 of 500  (463.371 iter/sec)
+Iterations: 470 of 500  (660.764 iter/sec)
+Iterations: 480 of 500  (731.261 iter/sec)
+Iterations: 490 of 500  (591.786 iter/sec)
+Iterations: 500 of 500  (257.566 iter/sec)
+Exiting run loop.
+
+Warning: Some molecules had a lifetime short relative to the timestep.
+  Mean lifetime of VGCC_C was 0.2 timesteps.
+
+Warning: During the simulation some reaction probabilities were greater than 1.You may want to rerun the simulation with the WARNINGS block enabled to get more detail.
+
+iterations = 500 ; elapsed time = 0.005 seconds
+Average diffusion jump was 1.00 timesteps
+
+Total number of random number use: 39480
+Total number of ray-subvolume intersection tests: 25739
+Total number of ray-polygon intersection tests: 13148815
+Total number of ray-polygon intersections: 20200
+Initialization CPU time = 0.029625 (user) and 0.004772 (system)
+Simulation CPU time = 0.454527 (user) and 0.139088 (system)
+Total wall clock time = 1 seconds
+Done running.

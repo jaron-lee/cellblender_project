@@ -1,0 +1,59 @@
+MCell initializing simulation...
+MCell[0]: random sequence 1
+MCell 3.2.1 (commit: 20a3dda  date: Mon, 10 Feb 2014 19:35:00 -0500)
+  Running on bg167.anu.edu.au at Wed Mar 11 22:50:01 2015
+
+  Copyright (C) 2006 - 2013 by
+    The National Center for Multiscale Modeling of Biological Systems,
+    The Salk Institute for Biological Studies, and
+    Pittsburgh Supercomputing Center, Carnegie Mellon University,
+
+
+**********************************************************************
+MCell development is supported by the NIGMS-funded (P41GM103712)
+National Center for Multiscale Modeling of Biological Systems (MMBioS)
+Please acknowledge MCell in your publications.
+**********************************************************************
+
+Defining molecules with the following theoretical average diffusion distances:
+  l_r_bar=0.225675833 um for Ca
+  l_r_bar=0 um for VGCC_C
+  l_r_bar=0 um for VGCC_O
+  l_r_bar=0 um for CaBS
+  l_r_bar=0 um for CaBS_Ca
+
+
+Reaction probabilities generated for the following reactions:
+	Probability 5.0000e-03 set for CaBS_Ca{1} -> Ca{1} CaBS{1} 
+
+Reaction probabilities generated for the following reactions:
+	Probability 2.9432e-02 set for Ca{1} + CaBS{1} -> CaBS_Ca{1} 
+
+Reaction probabilities generated for the following reactions:
+	Probability 1.0000e-02 set for VGCC_O{1} -> Ca{1} VGCC_O{1} 
+	Probability 5.0000e-03 set for VGCC_O{1} -> VGCC_C{1} 
+
+Reaction probabilities generated for the following reactions:
+	Probability 5.0000e+00 set for VGCC_C{1} -> VGCC_O{1} 
+
+Creating geometry (this may take some time)
+MCell: world bounding box in microns =
+         [ -0.299667209 -0.30031082 -2.23666 ] [ 0.300332934 0.299689353 3.30738425 ]
+Creating 125 subvolumes (5,5,5 per axis).
+Creating 1 memory partitions (1,1,1 per axis).
+Instantiating objects...
+Creating walls...
+Creating edges...
+Running simulation.
+Releasing 500 molecules VGCC_C ...  Released 86 VGCC_C from "Scene.vgcc_rel" at iteration 0.
+Releasing 500 molecules CaBS ...  Released 160 CaBS from "Scene.cabs_rel" at iteration 0.
+Iterations: 0 of 50000 
+Iterations: 100 of 50000  (226.717 iter/sec)
+Iterations: 200 of 50000  (105.863 iter/sec)
+Iterations: 300 of 50000  (71.7788 iter/sec)
+Iterations: 400 of 50000  (69.9379 iter/sec)
+Iterations: 500 of 50000  (76.0163 iter/sec)
+Iterations: 600 of 50000  (77.2515 iter/sec)
+Iterations: 700 of 50000  (68.5691 iter/sec)
+Iterations: 800 of 50000  (80.9458 iter/sec)
+Iterations: 900 of 50000  (76.868 iter/sec)
