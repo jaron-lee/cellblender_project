@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\title{ASC Report}
+\author{Jaron Lee}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{enumerate}
+\usepackage{extarrows}
+\usepackage[hmargin=3cm,vmargin=3.5cm]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\setlength\parindent{0pt} % sets indent to zero
+\setlength{\parskip}{10pt} % changes vertical space between paragraphs
+\renewcommand\thesubsection{\thesection.\roman{subsection}}
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+\section{Background}
+\subsection{Synaptic Structure}
+
+
+\subsection{Synaptic Transmission - An Overview}
+Synaptic transmission 
+\begin{itemize}
+    \item An action potential travels along the membrane of the presynaptic cell until it reaches the synapse.
+    \item This depolarisation causes voltage gated calcium channels to open.
+    \item Calcium ions flow from the extracellular space into the presynaptic terminal due to the concentration gradient.
+    \item The high calcium concentration activates proteins on neurotransmitter vesicles, causing them to fuse with the synaptic cell membrane and emptying their contents (about 4000 molecules) into the synaptic cleft.
+    \item The neurotransmitters (AMPA, NMDA) bind to their respective receptors on the postsynaptic terminal. At least two neurotransmitter molecules must bind to the receptor in order for it to activate. Most neurotransmitters are lost to the extracellular environment where they are retrieved by glial cells.
+    \item Activation of a receptor will cause something to occur in the cell. For example, ligand-gated ion channels such as AMPA and NMDA receptors open ion channels which permit sodium, potassium and calcium ions to enter the postsynaptic terminal.
+    \item The influx of ions will cause a change in voltage at the postsynaptic terminal, which produces a postsynaptic potential.
+
+\end{itemize}
+
+
+\section{Modelling Approach}
+
+The question we are interested in is the calcium buffering aspect of synaptic transmission.
+\end{document}
+

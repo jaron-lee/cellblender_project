@@ -1,0 +1,8 @@
+DEFINE_SURFACE_CLASSES
+{
+  ca_absorb
+  {
+    REFLECTIVE = Ca,
+  }
+}
+
