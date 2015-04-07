@@ -224,15 +224,34 @@ Similarly, create a site called 'cabs\_rel'. This will be situated on the 'Vesic
     \begin{figure}[H]
         \includegraphics[scale=0.5]{settings2.png}
     \end{figure}
+
+\subsection{Modifying Surface Classes}
+It may be desirable to define surface classes so that the surfaces in the model mimic real neuron surface structures better. 
+
+TO COMPLETE
     
 \subsection{Preparing for Simulation}
 A few more steps need to be copmleted before we can visualise our setup. 
 
-First, under 'Model Initialization', set the iterations to 1000 (this is the number of frames for which the simulation will run) and the time step to 1e-6 (the amount of simulation time that passes between frames).
+First, we want to make the presynaptic bouton semi-transparent so that we can see what is occuring inside the synapse. Under the 'Material' tab (look for the little red ball) create a new material by hitting the plus sign. Click the drag-down box and change the mode from 'Object' to 'Data'. Select the presynaptic bouton, enter 'Edit Mode' and assign the new material to the selected surface. Under 'Transparency', change the alpha level to 0.3. Exit 'Edit Mode'; the surface should be semi-transparent.
+
+    \begin{figure}[H]
+        \includegraphics[scale=0.5]{settings3.png}
+    \end{figure}
+
+Then, under 'Model Initialization', set the iterations to 1000 (this is the number of frames for which the simulation will run) and the time step to 1e-6 (the amount of simulation time that passes between frames).
 
 Under 'Reaction Output Settings', add an item for each molecule (should end up with 5 counts altogether). This setting will keep track of the number of molecules of each type currently existing in the model environment.
 
 Finally, under 'Visualization Output Settings' click 'Export All'.
 
 The model is now ready to go. Hit 'Run Simulation' under the 'Run Simulation' tab.
+tab
+\section{Troubleshooting}
+\marginlabel{Simulation doesn't run} First, under 'Run Simulation' ensure that both output and error logs are being sent to file. Inspection of the error log in particular should reveal the cause of the issue. The most common error is a failure to properly assign a surface region to a Blender object - ensure that all regions are properly assigned before commencing a simulation run.
+
+    \begin{figure}[H]
+        \includegraphics[scale=0.5]{trouble1.png}
+    \end{figure}
+
 \end{document}
