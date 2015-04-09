@@ -6,5 +6,6 @@ REACTION_DATA_OUTPUT
   {COUNT[CaBS_Ca,WORLD]}=> "./react_data/seed_" & seed & "/CaBS_Ca.World.dat"
   {COUNT[VGCC_C,WORLD]}=> "./react_data/seed_" & seed & "/VGCC_C.World.dat"
   {COUNT[VGCC_O,WORLD]}=> "./react_data/seed_" & seed & "/VGCC_O.World.dat"
+  {COUNT[NT,WORLD]}=> "./react_data/seed_" & seed & "/NT.World.dat"
 }
 

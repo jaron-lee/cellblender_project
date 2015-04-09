@@ -51,7 +51,7 @@ This section follows the paper written by Czech et. al. closely. It is expected 
 
 \item   Open Blender. In the '3D View' pane, delete the default object (shortcut: x)
     
-\item   Create a sphere. Select the 'UV Sphere' option from the sidebar. Below a pane called 'Add Circle' appears; set 'Segments' and 'Rings' to 16, 'Radius to '0.25'. 
+\item   Create a sphere. To do this at the centre, use snap (shortcut: Shift-S) and select 'Cursor to Centre'. Select the 'UV Sphere' option from the sidebar. Below a pane called 'Add Circle' appears; set 'Segments' and 'Rings' to 16, 'Radius to '0.25'. 
         \begin{figure}[H]
         \includegraphics[scale=0.5]{spinehead1.png}
         \end{figure}
@@ -230,16 +230,22 @@ It may be desirable to define surface classes so that the surfaces in the model 
 
 TO COMPLETE
     
-\subsection{Preparing for Simulation}
-A few more steps need to be copmleted before we can visualise our setup. 
+\subsection{Editing Model Object Appearance} % (fold)
+\label{sub:Editing Model Object Appearance}
 
-First, we want to make the presynaptic bouton semi-transparent so that we can see what is occuring inside the synapse. Under the 'Material' tab (look for the little red ball) create a new material by hitting the plus sign. Click the drag-down box and change the mode from 'Object' to 'Data'. Select the presynaptic bouton, enter 'Edit Mode' and assign the new material to the selected surface. Under 'Transparency', change the alpha level to 0.3. Exit 'Edit Mode'; the surface should be semi-transparent.
+% subsection Editing Model Object Appearance (end)
+Here are some steps which will improve the visualisation of our setup.
+
+First, we want to make the presynaptic bouton semi-transparent so that we can see what is occuring inside the synapse. Under the 'Material' tab (look for the little red ball) create a new material by hitting the plus sign. Click the drag-down box and change the mode from 'Object' to 'Data'. Select the presynaptic bouton, enter 'Edit Mode' and assign the new material to the selected surface. Under 'Transparency', change the alpha level to 0.3. Exit 'Edit Mode'; the surface should be semi-transparent. If it is not, then under 'Objects', go to 'Display' and turn on 'Transparency'.
 
     \begin{figure}[H]
         \includegraphics[scale=0.5]{settings3.png}
     \end{figure}
 
-Then, under 'Model Initialization', set the iterations to 1000 (this is the number of frames for which the simulation will run) and the time step to 1e-6 (the amount of simulation time that passes between frames).
+CellBlender will assign each molecule a certain colour automatically. If you want to change this, then go to the 'Outliner' (top right pane listing all the objects in the scene) and under 'molecules' go to the molecule of your choice. Click the small '+' to expand. For a molecule named 'a', you will see 'mol\_a\_pos' and 'mol\_a\_shaape'. Click on shape, and then navigate to 'Materials' (the little red ball) to change its colour.
+
+\subsection{Preparing for Simulation}
+Under 'Model Initialization', set the iterations to 1000 (this is the number of frames for which the simulation will run) and the time step to 1e-6 (the amount of simulation time that passes between frames).
 
 Under 'Reaction Output Settings', add an item for each molecule (should end up with 5 counts altogether). This setting will keep track of the number of molecules of each type currently existing in the model environment.
 

@@ -2,8 +2,9 @@ DEFINE_REACTIONS
 {
   VGCC_C' -> VGCC_O' [500000]
   VGCC_O' -> VGCC_C' [500]
-  VGCC_O' -> VGCC_O' + Ca' [1000]
-  Ca' + CaBS' -> CaBS_Ca' [1e+07]
+  VGCC_O' -> VGCC_O' + Ca' [100000]
+  Ca' + CaBS' -> CaBS_Ca' [1e+08]
   CaBS_Ca' -> Ca' + CaBS' [500]
+  CaBS_Ca' + CaBS_Ca' -> NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' + NT' [1e+06]
 }
 

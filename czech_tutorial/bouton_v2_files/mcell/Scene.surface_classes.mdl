@@ -2,7 +2,19 @@ DEFINE_SURFACE_CLASSES
 {
   ca_absorb
   {
-    REFLECTIVE = Ca,
+    ABSORPTIVE = Ca,
+  }
+  ca_trans
+  {
+    TRANSPARENT = Ca'
+  }
+  nt_trans
+  {
+    TRANSPARENT = NT;
+  }
+  nt_absorb
+  {
+    ABSORPTIVE = NT'
   }
 }
 

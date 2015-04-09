@@ -31,7 +31,7 @@ INSTANTIATE Scene OBJECT
   {
    SHAPE = Scene.Vesicle[vesicle_surf]
    MOLECULE = CaBS'
-   NUMBER_TO_RELEASE = 50
+   NUMBER_TO_RELEASE = 55
    RELEASE_PROBABILITY = 1
   }
 }
