@@ -1,8 +1,0 @@
-MODIFY_SURFACE_REGIONS
-{
-  Plane[inside]
-  {
-    SURFACE_CLASS = empty
-  }
-}
-

@@ -1,0 +1,12 @@
+DEFINE_SURFACE_CLASSES
+{
+  ca_absorb
+  {
+    ABSORPTIVE = Ca,
+  }
+  ca_trans
+  {
+    TRANSPARENT = Ca'
+  }
+}
+

@@ -1,0 +1,163 @@
+MCell initializing simulation...
+MCell[0]: random sequence 1
+MCell 3.2.1 (commit: 20a3dda  date: Mon, 10 Feb 2014 19:35:00 -0500)
+  Running on Jaron-Lees-MacBook-Pro.local at Thu May 21 16:23:40 2015
+
+  Copyright (C) 2006 - 2013 by
+    The National Center for Multiscale Modeling of Biological Systems,
+    The Salk Institute for Biological Studies, and
+    Pittsburgh Supercomputing Center, Carnegie Mellon University,
+
+
+**********************************************************************
+MCell development is supported by the NIGMS-funded (P41GM103712)
+National Center for Multiscale Modeling of Biological Systems (MMBioS)
+Please acknowledge MCell in your publications.
+**********************************************************************
+
+Defining molecules with the following theoretical average diffusion distances:
+  l_r_bar=0.000560499122 um for LGIC_C
+  l_r_bar=0 um for LGIC_O
+  l_r_bar=0.0519544785 um for NT
+
+
+Reaction probabilities generated for the following reactions:
+	Probability 1.2785e-02 set for LGIC_C{1} + NT{1} -> LGIC_O{1} 
+
+
+
+Surfaces with surface class "nt_reflect{1}" are REFLECTIVE for volume molecules  NT{1}.
+
+
+
+Surfaces with surface class "nt_trans{1}" are TRANSPARENT for volume molecules  NT{1}.
+
+
+
+Surfaces with surface class "nt_absorb{1}" are ABSORPTIVE for volume molecules  NT{1}.
+
+Creating geometry (this may take some time)
+MCell: world bounding box in microns =
+         [ -0.874667168 -0.875311077 -7.95408487 ] [ 0.875333309 0.874689519 8.02570438 ]
+Creating 125 subvolumes (5,5,5 per axis).
+Creating 1 memory partitions (1,1,1 per axis).
+Instantiating objects...
+Creating walls...
+Creating edges...
+Running simulation.
+Releasing 400 molecules LGIC_C ...  Released 400 LGIC_C from "Scene.lgic_rel" at iteration 0.
+Iterations: 0 of 10000 
+Iterations: 100 of 10000  (580.171 iter/sec)
+Iterations: 200 of 10000  (388.845 iter/sec)
+Iterations: 300 of 10000  (534.442 iter/sec)
+Iterations: 400 of 10000  (631.872 iter/sec)
+Releasing 4000 molecules NT ...  Released 4000 NT from "Scene.rel_2" at iteration 471.
+Iterations: 500 of 10000  (25.5121 iter/sec)
+Iterations: 600 of 10000  (7.73392 iter/sec)
+Iterations: 700 of 10000  (9.88647 iter/sec)
+Iterations: 800 of 10000  (13.4892 iter/sec)
+Iterations: 900 of 10000  (18.5261 iter/sec)
+Releasing 4000 molecules NT ...  Released 4000 NT from "Scene.rel_1" at iteration 1000.
+Iterations: 1000 of 10000  (28.3309 iter/sec)
+Iterations: 1100 of 10000  (6.81332 iter/sec)
+Iterations: 1200 of 10000  (8.14672 iter/sec)
+Iterations: 1300 of 10000  (0.152865 iter/sec)
+Iterations: 1400 of 10000  (14.0005 iter/sec)
+Iterations: 1500 of 10000  (20.2955 iter/sec)
+Iterations: 1600 of 10000  (27.4375 iter/sec)
+Iterations: 1700 of 10000  (38.4763 iter/sec)
+Iterations: 1800 of 10000  (51.702 iter/sec)
+Iterations: 1900 of 10000  (77.7482 iter/sec)
+Iterations: 2000 of 10000  (105.004 iter/sec)
+Iterations: 2100 of 10000  (143.816 iter/sec)
+Iterations: 2200 of 10000  (166.947 iter/sec)
+Iterations: 2300 of 10000  (184.41 iter/sec)
+Iterations: 2400 of 10000  (210.507 iter/sec)
+Iterations: 2500 of 10000  (230.71 iter/sec)
+Iterations: 2600 of 10000  (259.519 iter/sec)
+Iterations: 2700 of 10000  (251.622 iter/sec)
+Iterations: 2800 of 10000  (263.091 iter/sec)
+Iterations: 2900 of 10000  (252.887 iter/sec)
+Iterations: 3000 of 10000  (377.319 iter/sec)
+Iterations: 3100 of 10000  (363.543 iter/sec)
+Iterations: 3200 of 10000  (318.357 iter/sec)
+Iterations: 3300 of 10000  (294.949 iter/sec)
+Iterations: 3400 of 10000  (344.734 iter/sec)
+Iterations: 3500 of 10000  (404.988 iter/sec)
+Iterations: 3600 of 10000  (415.163 iter/sec)
+Iterations: 3700 of 10000  (430.019 iter/sec)
+Iterations: 3800 of 10000  (410.031 iter/sec)
+Iterations: 3900 of 10000  (419.69 iter/sec)
+Iterations: 4000 of 10000  (386.182 iter/sec)
+Iterations: 4100 of 10000  (283.367 iter/sec)
+Iterations: 4200 of 10000  (359.848 iter/sec)
+Iterations: 4300 of 10000  (419.946 iter/sec)
+Iterations: 4400 of 10000  (404.433 iter/sec)
+Iterations: 4500 of 10000  (344.226 iter/sec)
+Iterations: 4600 of 10000  (391.696 iter/sec)
+Iterations: 4700 of 10000  (382.37 iter/sec)
+Iterations: 4800 of 10000  (344.272 iter/sec)
+Iterations: 4900 of 10000  (311.026 iter/sec)
+Iterations: 5000 of 10000  (395.468 iter/sec)
+Iterations: 5100 of 10000  (346.866 iter/sec)
+Iterations: 5200 of 10000  (390.541 iter/sec)
+Iterations: 5300 of 10000  (397.289 iter/sec)
+Iterations: 5400 of 10000  (464.283 iter/sec)
+Iterations: 5500 of 10000  (406.754 iter/sec)
+Iterations: 5600 of 10000  (407.234 iter/sec)
+Iterations: 5700 of 10000  (423.057 iter/sec)
+Iterations: 5800 of 10000  (404.78 iter/sec)
+Iterations: 5900 of 10000  (430.407 iter/sec)
+Iterations: 6000 of 10000  (344.68 iter/sec)
+Iterations: 6100 of 10000  (295.348 iter/sec)
+Iterations: 6200 of 10000  (299.774 iter/sec)
+Iterations: 6300 of 10000  (347.409 iter/sec)
+Iterations: 6400 of 10000  (312.726 iter/sec)
+Iterations: 6500 of 10000  (314.979 iter/sec)
+Iterations: 6600 of 10000  (310.833 iter/sec)
+Iterations: 6700 of 10000  (329.576 iter/sec)
+Iterations: 6800 of 10000  (343.186 iter/sec)
+Iterations: 6900 of 10000  (335.235 iter/sec)
+Iterations: 7000 of 10000  (289.488 iter/sec)
+Iterations: 7100 of 10000  (330.016 iter/sec)
+Iterations: 7200 of 10000  (336.64 iter/sec)
+Iterations: 7300 of 10000  (336.005 iter/sec)
+Iterations: 7400 of 10000  (296.289 iter/sec)
+Iterations: 7500 of 10000  (349.767 iter/sec)
+Iterations: 7600 of 10000  (317.851 iter/sec)
+Iterations: 7700 of 10000  (342.729 iter/sec)
+Iterations: 7800 of 10000  (351.813 iter/sec)
+Iterations: 7900 of 10000  (327.875 iter/sec)
+Iterations: 8000 of 10000  (270.205 iter/sec)
+Iterations: 8100 of 10000  (294.688 iter/sec)
+Iterations: 8200 of 10000  (379.416 iter/sec)
+Iterations: 8300 of 10000  (215.932 iter/sec)
+Iterations: 8400 of 10000  (315.573 iter/sec)
+Iterations: 8500 of 10000  (396.305 iter/sec)
+Iterations: 8600 of 10000  (269.198 iter/sec)
+Iterations: 8700 of 10000  (393.983 iter/sec)
+Iterations: 8800 of 10000  (484.705 iter/sec)
+Iterations: 8900 of 10000  (439.518 iter/sec)
+Iterations: 9000 of 10000  (499.868 iter/sec)
+Iterations: 9100 of 10000  (457.434 iter/sec)
+Iterations: 9200 of 10000  (410.139 iter/sec)
+Iterations: 9300 of 10000  (268.398 iter/sec)
+Iterations: 9400 of 10000  (266.025 iter/sec)
+Iterations: 9500 of 10000  (503 iter/sec)
+Iterations: 9600 of 10000  (414.173 iter/sec)
+Iterations: 9700 of 10000  (443.339 iter/sec)
+Iterations: 9800 of 10000  (436.357 iter/sec)
+Iterations: 9900 of 10000  (506.575 iter/sec)
+Iterations: 10000 of 10000  (403.237 iter/sec)
+Exiting run loop.
+iterations = 10000 ; elapsed time = 0.01 seconds
+Average diffusion jump was 1.00 timesteps
+
+Total number of random number use: 32234611
+Total number of ray-subvolume intersection tests: 61080833
+Total number of ray-polygon intersection tests: 38771900201
+Total number of ray-polygon intersections: 164325671
+Initialization CPU time = 0.029600 (user) and 0.007856 (system)
+Simulation CPU time = 751.826235 (user) and 9.715078 (system)
+Total wall clock time = 772 seconds
+Done running.

@@ -1,0 +1,28 @@
+DEFINE_MOLECULES
+{
+  Ca
+  {
+    DIFFUSION_CONSTANT_3D = 5.3e-06
+  }
+  VGCC_C
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  VGCC_O
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  CaBS
+  {
+    DIFFUSION_CONSTANT_2D = 0.0001
+  }
+  CaBS_Ca
+  {
+    DIFFUSION_CONSTANT_2D = 0.0001
+  }
+  TAG
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+}
+

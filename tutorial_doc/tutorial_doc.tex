@@ -9,14 +9,13 @@
 \usepackage{float}
 \usepackage{ifthen}
 \usepackage{graphicx}
-% ifthen wird vom Bild von N.Beebe gebraucht!
 
 \def\bs{\char'134 } % backslash in \tt font.
 \newcommand{\ie}{i.\,e.,}
 \newcommand{\eg}{e.\,g..}
 \DeclareRobustCommand\cs[1]{\texttt{\char`\\#1}}
 
-\title{A Guide on Modelling Synapses in CellBlender and MCell}
+\title{A Guide on Modelling Synapses with CellBlender and MCell}
 \author{Jaron Lee}
 
 \date{}
@@ -31,7 +30,7 @@
 \maketitle
 
 \begin{abstract}
-    This guide aims to improve on the work by Czech et. al., by updating the guide for the MCell - CellBlender software.
+This guide aims to provide an introduction to modelling with CellBlender and MCell. Upon completion the reader will have constructed a working model of calcium homeostasis at a synaptic connection.
 \end{abstract}
 
 %\marginlabel{Start Blender}
@@ -51,7 +50,7 @@ This section follows the paper written by Czech et. al. closely. It is expected 
 
 \item   Open Blender. In the '3D View' pane, delete the default object (shortcut: x)
     
-\item   Create a sphere. To do this at the centre, use snap (shortcut: Shift-S) and select 'Cursor to Centre'. Select the 'UV Sphere' option from the sidebar. Below a pane called 'Add Circle' appears; set 'Segments' and 'Rings' to 16, 'Radius to '0.25'. 
+\item   Create a sphere. To do this at the centre, use snap (shortcut: Shift-S) and select 'Cursor to Centre'. Select the 'UV Sphere' option from the sidebar. Below a pane called 'Add Circle' appears; set 'Segments' and 'Rings' to 16, 'Radius to '0.7'. 
         \begin{figure}[H]
         \includegraphics[scale=0.5]{spinehead1.png}
         \end{figure}
@@ -61,7 +60,7 @@ This section follows the paper written by Czech et. al. closely. It is expected 
         \includegraphics[scale=0.5]{spinehead2.png}
         \end{figure}
 
-\item   Change view to see the sphere from the 'Front' view. (shortcut: 1 on numpad)
+    \item   Change view to see the sphere from the 'Front' view. (shortcut: 1 on numpad). Note, it is \textbf{extremely} important that the user be in orthographic mode (shortcut: 5 on numpad) during Blender work.
 
 \item   Deselect the sphere (shortcut: a) and make it transparent (shortcut: z)
 
@@ -80,11 +79,6 @@ This section follows the paper written by Czech et. al. closely. It is expected 
         \end{figure}
         The object should now be closed by a flat top.
 
-\item   Subdivide triangles at the top. Unfortunately the 'Multicut tool' has been deprecated. To create set of concentric rings, first select the topmost vertices (shortcut: b). Then enter 'Knife' mode (shortcut: k), and hold down \textit{control}. This locks the knife cut to the midpoint. Click around to make a circle cut, and then press \textit{Enter} to complete the cut. Continue these cuts until the picture looks as below:
-        \begin{figure}[H]
-        \includegraphics[scale=0.5]{spinehead6.png}
-        \end{figure}
-         
 \end{enumerate}
 
 \subsection{Creating a presynaptic bouton}
@@ -99,13 +93,7 @@ This section follows the paper written by Czech et. al. closely. It is expected 
         \includegraphics[scale=0.5]{bouton1.png}
         \end{figure}
 
-\item   Shift and scale the bouton. Grab the object (shortcut: g), constrain movement to the z-axis (shortcut: z) and type 0.15, \textit{Enter} to move the object. Scale the object to be 20\% larger by typing s, 1.2, \textit{Enter}.
-
-\item   Creating the invagination. Switch to 'Edit Mode' (shortcut: Tab) and deselect everything (shortcut: a). Select the lowermost vertices (see below) and perform the 'Select Less' operation (shortcut: Control-Minus on numpad). Click the 'Extrude Region' button under 'Add' in 'Tools', press z to constrain, and type -0.075 to extrude it upwards.
-        \begin{figure}[H]
-        \includegraphics[scale=0.5]{bouton2.png}
-        \end{figure}
-
+\item   Shift and scale the bouton. Grab the object (shortcut: g), constrain movement to the z-axis (shortcut: z) and type 0.023, \textit{Enter} to move the object. 
 \end{enumerate}
 
 \subsection{Adding Axonal and Dendritic Extensions}
@@ -125,23 +113,18 @@ This section follows the paper written by Czech et. al. closely. It is expected 
 \subsection{Add Synaptic Vesicles with Regions for Calcium Binding}
 
 \begin{enumerate}
-\item   Create the first vesicle. First, ensure that the object is at the origin by moving it if necessary (shortcut: g). Move the cursor to the origin (shortcut: \textit{Shift}-c). Ensure that 'Object Mode' is enabled. Under the 'Create' tab at left, select Ico-Sphere. A pane appears at lower left - change the default settings to 1 subdivision a size of 0.02. A small sphere should appear at the origin.
+\item   Create the first vesicle. First, ensure that the object is at the origin by moving it if necessary (shortcut: g). Move the cursor to the origin (shortcut: \textit{Shift}-c). Ensure that 'Object Mode' is enabled. Under the 'Create' tab at left, select Ico-Sphere. A pane appears at lower left - change the default settings to 1 subdivision and a size of 0.023. A small sphere should appear at the origin.
 
-\item   It is necessary to rotate the vesicle. With the sphere selected, press r, x, 90, \textit{Enter} to align the sphere with the x-axis. Enter the 'Object' tab at right, and edit the name of the sphere to 'Vesicle'.
+\item   It is necessary to rotate the vesicle. With the sphere selected, press r, x, 90, \textit{Enter} to align the sphere with the x-axis. Enter the 'Outliner' pane at the top right, and edit the name of the sphere to 'Vesicle\_1'.
 
-\item   Define the calcium binding region. With the vesicle still selected, change to 'Edit Mode' (shortcut: \textit{Tab}) and triangulate the faces (shortcut: \textit{Control-t}). First, select the 'Define Surface Region' tab which is under the 'Object' tab. Add a new region and name it 'vesicle\_surf' (for the surface region of the vesicle). With the vesicle selected, click 'Assign'. We must now add the vesicle to the list of mesh objects to be included in the simulation. Under the 'Scene' tab, select 'Model Objects' and add the vesicle to this list. A green tick should appear.
+\item   Define the calcium binding region. With the vesicle still selected, change to 'Edit Mode' (shortcut: \textit{Tab}) and triangulate the faces (shortcut: \textit{Control-t}). First, select the 'Define Surface Region' tab which is under the 'Object' tab. Add a new region and name it 'vesicle\_1\_surf' (for the surface region of the vesicle). With the vesicle selected, click 'Assign'. We must now add the vesicle to the list of mesh objects to be included in the simulation. Under the 'Scene' tab, select 'Model Objects' and add the vesicle to this list. A green tick should appear.
         \begin{figure}[H]
         \includegraphics[scale=0.5]{vesicle1.png}
         \end{figure}
 
-        \begin{figure}[H]
-        \includegraphics[scale=0.5]{vesicle2.png}
-        \end{figure}
+\item   Move the vesicle. Tab into 'Object Mode', press g to grab the vesicle, type x, -0.108 \textit{Enter} to move the vesicle along the x-axis. Hit g, 0.105, \textit{Enter} to move it 0.105 units along the z-axis. 
 
-\item   Move the vesicle. Tab into 'Object Mode', press g to grab the vesicle, type x, -0.108 \textit{Enter} to move the vesicle along the x-axis. Hit g, 0.105, \textit{Enter} to move it 0.105 units along the z-axis.
-
-\item   Duplicate the vesicle. Hit \textit{Shift}-d, g, 0.216, \textit{Enter} to move the vesicle the appropriate distance. Then, restrict visibility of the Presynaptic Bouton, select both vesicles, and under 'Define Surface Region' hit the assign button again.
-
+\item   Duplicate the vesicle. Hit \textit{Shift}-d, g, 0.216, \textit{Enter} to move the vesicle the appropriate distance. This vesicle should appear as a new object under the 'Scene' pane - rename this vesicle to 'Vesicle\_2' and repeat the steps for defining the surface region, this time naming it 'vesicle\_2\_surf'.
         \begin{figure}[H]
         \includegraphics[scale=0.5]{vesicle3.png}
         \end{figure}
@@ -152,11 +135,13 @@ This section follows the paper written by Czech et. al. closely. It is expected 
 \subsection{Defining region for voltage-gated calcium channels (VGCC)}
 
 \begin{enumerate}
-\item   Clip the existing mesh objects. Use \textit{Alt-b} to draw a box around the presynaptic terminal and the vesicles. This will only show those items and hide the rest of the model.
+\item   Clip the existing mesh objects. Use \textit{Alt-b} to draw a box around the presynaptic terminal and the vesicles. This will only show those items and hide the rest of the model. It is helpful to switch into 'Edit Mode', turn on wireframe (shortcut: z) and switch camera view to side (shortcut: 1,3 on numpad).
     
-\item   Switch to overhead view. Hit 7 on the numpad to look down from above on the vesicles. We want to align the vesicles over a a few faces (note how they sit at the intersection of four faces). Select the vesicles and press r, 10 to rotate them over the appropriate faces.
+\item   Switch to overhead view. Hit 7 on the numpad to look down from above on the vesicles. 
 
-\item   Select the faces. Enter 'Edit Mode' with 'PresynapticBouton' selected to observe the faces. While holding \textit{Shift} click on the faces directly under the vesicle (4 total). 
+\item   Create the regions. We will create two small planes under each vesicle which will represent the VGCCs. Use the 'Plane' tool under 'Create' to define a plane. Adjust the settings using the 'Add Plane' pane at bottom left to position it underneath the vesicle. Duplicate it and copy it over to the other vesicle in the same fashion used to duplicate the vesicle. 
+
+\item Group the regions. With both panes selected, use \textit{Ctrl-p} to merge the regions as one.
 
 \item   Assign the selected regions. In the bottom right pane under 'Objects', go to 'Define Surface Region', and label it 'vgcc\_region'. We want this region to be an object in its own right for later selection and editing. With the region selected, press p and hit 'Selection'. Rename the object created to 'VGCC' in the top right pane. Remove the clipping box by pressing \textit{Alt-b}.
 \end{enumerate}
@@ -172,8 +157,6 @@ This section follows the paper written by Czech et. al. closely. It is expected 
 
 \end{enumerate}
 
-\section{Simulation using the CellBlender Interface}
-
 \subsection{Adding Objects to CellBlender}
 The following objects should be under 'Model Objects':
 
@@ -181,55 +164,12 @@ The following objects should be under 'Model Objects':
     \item PresynapticBouton
     \item SpineHead
     \item VGCC
-    \item Vesicle
+    \item Vesicle\_1
+    \item Vesicle\_2
 \end{enumerate}
 
 If not, simply select the model item, triangulate (shortcut: \textit{Control}-t) and then with the item still selected add it under 'Model Objects'. This allows MCell to recognise the Blender object as part of the simulation.
 
-\subsection{Specification of Molecules}
-The following molecules will need to be added to our simulation under 'Scene' in 'Define Molecules'. The format is name of molecule, type of molecule, and diffusion constant.
-
-\begin{enumerate}
-    \item Ca, Volume, 1e-6
-    \item VGCC\_C, Surface, 0
-    \item VGCC\_O, Surface, 0
-    \item CaBS, Surface, 0
-    \item CaBS\_Ca, Surface, 0
-\end{enumerate}
-
-\subsection{Define Reactions between Molecules}
-Given a set of molecules, we must define the interactions that occur when molecules meet. Under 'Define Reactions', enter the following (consists of reactants, products, and forward rate constant):
-
-\begin{enumerate}
-    \item VGCC\_C' -> VGCC\_O', 5e5
-    \item VGCC\_O' -> VGCC\_C', 500
-    \item VGCC\_O' -> VGCC\_O' + Ca', 1e3
-    \item Ca' + CaBS' -> CaBS\_Ca', 1e7
-    \item CaBS\_Ca' -> Ca' + CaBS', 500
-\end{enumerate}
-
-The apostrophes are used to indicate to CellBlender the geometry at which the reaction occurs.
-
-
-\subsection{Adding Molecules to Regions}
-We only want the closed VGCC's and the calcium binding sites 'CaBS' to be present when the model is initialised. All other molecules will be generated by the reactions during simulation. The following items will be added under 'Molecule Release/Placement'. 
-
-Create a site called 'vgcc\_rel'. This will be situated on the surface named 'VGCC[vgcc\_reg]', and will represent the calcium channels. Enter the following settings.
-    \begin{figure}[H]
-        \includegraphics[scale=0.5]{settings1.png}
-    \end{figure}
-
-
-Similarly, create a site called 'cabs\_rel'. This will be situated on the 'Vesicle[vesicle\_surf]' and will represent the calcium release sites. Enter the following settings.
-    \begin{figure}[H]
-        \includegraphics[scale=0.5]{settings2.png}
-    \end{figure}
-
-\subsection{Modifying Surface Classes}
-It may be desirable to define surface classes so that the surfaces in the model mimic real neuron surface structures better. 
-
-TO COMPLETE
-    
 \subsection{Editing Model Object Appearance} % (fold)
 \label{sub:Editing Model Object Appearance}
 
@@ -244,15 +184,106 @@ First, we want to make the presynaptic bouton semi-transparent so that we can se
 
 CellBlender will assign each molecule a certain colour automatically. If you want to change this, then go to the 'Outliner' (top right pane listing all the objects in the scene) and under 'molecules' go to the molecule of your choice. Click the small '+' to expand. For a molecule named 'a', you will see 'mol\_a\_pos' and 'mol\_a\_shaape'. Click on shape, and then navigate to 'Materials' (the little red ball) to change its colour.
 
-\subsection{Preparing for Simulation}
-Under 'Model Initialization', set the iterations to 1000 (this is the number of frames for which the simulation will run) and the time step to 1e-6 (the amount of simulation time that passes between frames).
+
+\subsection{Making Copies of the Model}
+At this stage, we have completed the model geometry - all the Blender objects have been set up for simulation. Make a copy of the file  (File -> Save As) by saving it under another name. One copy will be used in the next section (Simulation of the Presynaptic Phase) while the other will be used in the section after (Simulation of the Postsynaptic Phase).
+
+\section{Simulation using the CellBlender Interface - Presynaptic Phase}
+
+In this section, we simulate the activation of the vesicles via a SNARE complex calcium activation mechanism. We record the release times by creating tags for the activated SNARE complexes. Through an external Python script we record these times in preparation for the next phase.
+
+
+\subsection{Specification of Molecules}
+The following molecules will need to be added to our simulation under 'Scene' in 'Define Molecules'. The format is name of molecule, type of molecule, and diffusion constant.
+
+\begin{enumerate}
+    \item Ca, Volume, 1e-6
+    \item VGCC\_C, Surface, 0
+    \item VGCC\_O, Surface, 0
+    \item CaBS, Surface, 0
+    \item CaBS\_Ca, Surface, 0
+    \item TAG, Surface, 0
+\end{enumerate}
+
+\subsection{Define Reactions between Molecules}
+Given a set of molecules, we must define the interactions that occur when molecules meet. Under 'Define Reactions', enter the following (consists of reactants, products, and forward rate constant):
+
+\begin{enumerate}
+    \item VGCC\_C' $\to$ VGCC\_O', 5e5
+    \item VGCC\_O' $\to$ VGCC\_C', 500
+    \item VGCC\_O' $\to$ VGCC\_O' + Ca', 1e3
+    \item Ca' + CaBS' $\to$ CaBS\_Ca', 1e7
+    \item CaBS\_Ca' + Ca' $\to$ TAG', 1e9
+\end{enumerate}
+
+The apostrophes are used to indicate to CellBlender the geometry at which the reaction occurs.
+
+
+\subsection{Adding Molecules to Regions}
+We only want the closed VGCC's and the calcium binding sites 'CaBS' to be present when the model is initialised. All other molecules will be generated by the reactions during simulation. The following items will be added under 'Molecule Release/Placement'. 
+
+Create a site called 'vgcc\_rel'. This will be situated on the surface named 'VGCC[vgcc\_reg]', and will represent the calcium channels. Enter the following settings.
+    \begin{figure}[H]
+        \includegraphics[scale=0.5]{settings1.png}
+    \end{figure}
+
+
+Similarly, create a site called 'cabs\_rel\_1'. This will be situated on the 'Vesicle\_1[vesicle\_1\_surf]' and will represent the calcium release sites. Enter the following settings.
+    \begin{figure}[H]
+        \includegraphics[scale=0.5]{settings2.png}
+    \end{figure}
+
+Repeat again for 'cabs\_rel\_2', with identical settings.
+
+\subsection{Modifying and Defining Surface Classes}
+It may be desirable to define surface classes so that the surfaces in the model mimic real neuron surface structures better. 
+
+We can create surface classes under the 'Define Surface Classes' option. Create a surface class and add a property. The properties have three attributes - molecule, orientation, and type. 
+
+For this section, we will create a surface class called 'ca\_absorb'. It will affect the Ca molecule, have Top/Front orientation, and have the type 'Absorb'. We then assign under 'Modify Surface Regions' this surface class to the presynaptic bouton - 'PresynapticBouton[presynaptic\_shell]'.
+ 
+Once the above instructions are complete, skip ahead and complete all the instructions under 'Preparing for Simulation' . Then, save the file and quit.
+
+\section{Simulating using the CellBlender Interface - Postsynaptic Phase}
+In this phase, we simulate the timed release of neurotransmitter molecules and their subsequent interaction with the receptor region on the spine head. The release times are obtained from the first phase of our simulation.
+
+Complete the following instructions in the second copy of the Blender geometry.
+\subsection{Glial Cell Proxy}
+In the postsynaptic phase, neurotransmitter molecules will be dumped into the synaptic cleft and then will either contact a receptor or diffuse out of the cleft. In reality, these neurotransmitter molecules will be collected by glial cells and returned to neuron.
+
+We can simulate this action by defining a cylinder around the whole synapse. Centre the cursor (shortcut: \textit{Crtl}-b) and then create the cylinder. At the 'Add Cylinder' pane at bottom left, leave the radius at the default of 1.0, but ensure that for 'Cap Fill Type' the option 'None' is selected. Enter 'Edit Mode', select the whole cylinder, and then triangulate the object (shortcut: \textit{Crtl}-t). Add the cylinder under 'Model Objects'. Define a surface region called 'surface' under 'Add Surface Regions'. Finally, name the cylinder 'GlialCells'. 
+
+
+\subsection{Specification of Molecules}
+We want to add the following molecules to our simulation. The instruction format is once again molecule, molecule type, and rate constant.
+
+\begin{enumerate}
+    \item NT, Volume, 5.3e-6
+    \item LGIC\_C, Surface, 0
+    \item LGIC\_O, Surface, 0
+\end{enumerate} 
+
+\subsection{Define Reactions between Molecules}
+We want to specify interactions between our molecules. There is only one relevant reaction in this case.
+
+\begin{enumerate}
+    \item NT' + LGIC\_C' $\to$ LGIC\_O', 1e7
+\end{enumerate}
+
+\subsection{Modifying and Defining Surface Classes}
+We want to create surface classes called 'nt\_absorb' and 'nt\_reflect'. They both affect the NT molecule, and have the types 'Absorb' and 'Reflective' respectively. We assign 'nt\_absorb' to a single region - GlialCells[surface]. We assign 'nt\_reflect' to two regions - PresynapticBouton[presynaptic\_membrane] and SpineHead[receptor\_region].
+
+\section{Preparing for Simulation}
+The instructions for this section are to be completed for both parts of the simulation.
+
+Under 'Model Initialization', set the iterations to 10000 and the time step to 1e-6 (the amount of simulation time that passes between frames).
 
 Under 'Reaction Output Settings', add an item for each molecule (should end up with 5 counts altogether). This setting will keep track of the number of molecules of each type currently existing in the model environment.
 
-Finally, under 'Visualization Output Settings' click 'Export All'.
+Ensure that the data is saved before continuing.
 
-The model is now ready to go. Hit 'Run Simulation' under the 'Run Simulation' tab.
-tab
+Refer to the IPython Notebook which contains the remainder of the instructions. These instructions are also integrated with scripts which perform backend tasks.
+
 \section{Troubleshooting}
 \marginlabel{Simulation doesn't run} First, under 'Run Simulation' ensure that both output and error logs are being sent to file. Inspection of the error log in particular should reveal the cause of the issue. The most common error is a failure to properly assign a surface region to a Blender object - ensure that all regions are properly assigned before commencing a simulation run.
 

@@ -1,0 +1,2 @@
+Fatal error: On line: 141 of file /Users/Jaron/Dropbox/Work 2015/SCNC2103/czech_tutorial/bouton_v4_files/mcell/Scene.geometry.mdl
+syntax error

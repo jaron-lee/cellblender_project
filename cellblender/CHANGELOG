@@ -1,0 +1,22 @@
+Changes since 0.1.52
+
+* New Features:
+  * Optional initialization commands
+  * Partition generation
+  * Surface classes
+  * Modification of surface regions by surface classes
+  * Hid advanced molecule options
+  * Compatible with Blender 2.66
+    (Not compatible with previous versions of Blender)
+  * Export of reaction and visualization data
+  * Plotting of reaction data
+  * Run MCell simulations from within Blender
+  * Updated status system
+  * Better error checking
+  * New project directory layout
+  * CellBlender preferences
+  * MDL geometry importer implemented in c/flex/bison/swig/python
+
+* Bug Fixes:
+  * Meshes could be exported with the wrong rotation
+  * Molecule positions and shapes (glyphs) could be offset on import

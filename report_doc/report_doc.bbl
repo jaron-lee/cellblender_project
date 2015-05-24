@@ -1,0 +1,67 @@
+\begin{thebibliography}{}
+
+\bibitem[Arellano {\rm et~al.}, 2007]{Arellano:FrontNeurosci:2007}
+Arellano, J.~I., Benavides-Piccione, R., Defelipe, J.  and Yuste, R.
+  (2007{\rm{}}).
+\newblock Ultrastructure of dendritic spines: correlation between synaptic and
+  spine morphologies.
+\newblock {\rm Front Neurosci } \emph{1}, 131--43.
+
+\bibitem[Bruns and Jahn, 1995]{Bruns:Nature:1995}
+Bruns, D. and Jahn, R. (1995{\rm{}}).
+\newblock Real-time measurement of transmitter release from single synaptic
+  vesicles.
+\newblock {\rm Nature } \emph{377}, 62--5.
+
+\bibitem[Czech {\rm et~al.}, 2009]{Czech:MethodsMolBiol:2009}
+Czech, J., Dittrich, M.  and Stiles, J.~R. (2009{\rm{}}).
+\newblock Rapid creation, Monte Carlo simulation, and visualization of
+  realistic 3D cell models.
+\newblock {\rm Methods Mol Biol } \emph{500}, 237--87.
+
+\bibitem[Dittrich {\rm et~al.}, 2013]{Dittrich:BiophysJ:2013}
+Dittrich, M., Pattillo, J.~M., King, J.~D., Cho, S., Stiles, J.~R.  and
+  Meriney, S.~D. (2013{\rm{}}).
+\newblock An excess-calcium-binding-site model predicts neurotransmitter
+  release at the neuromuscular junction.
+\newblock {\rm Biophys J } \emph{104}, 2751--63.
+
+\bibitem[Llinas, 1999]{Llinas:TheSquidGiantSynapseAModel:1999}
+Llinas, R. (1999{\rm{}}).
+\newblock {\rm The squid giant synapse : a model for chemical transmission}.
+\newblock Oxford University Press, New York.
+
+\bibitem[Ma, 2014]{ma2014quantitative}
+Ma, J. (2014{\rm{}}).
+\newblock {\rm Quantitative simulation of synaptic vesicle release at the
+  neuromuscular junction}.
+\newblock PhD thesis, University of Pittsburgh.
+
+\bibitem[Rusakov, 2001]{rusakov2001role}
+Rusakov, D.~A. (2001{\rm{}}).
+\newblock The role of perisynaptic glial sheaths in glutamate spillover and
+  extracellular Ca 2+ depletion.
+\newblock {\rm Biophysical Journal } \emph{81}, 1947--1959.
+
+\bibitem[Stricker {\rm et~al.}, 1996]{Stricker:JPhysiol:1996}
+Stricker, C., Field, A.~C.  and Redman, S.~J. (1996{\rm{}}).
+\newblock Statistical analysis of amplitude fluctuations in EPSCs evoked in rat
+  CA1 pyramidal neurones in vitro.
+\newblock {\rm J Physiol } \emph{490 ( Pt 2)}, 419--41.
+
+\bibitem[van~den Bogaart {\rm et~al.},
+  2010]{vandenBogaart:NatStructMolBiol:2010}
+van~den Bogaart, G., Holt, M.~G., Bunt, G., Riedel, D., Wouters, F.~S.  and
+  Jahn, R. (2010{\rm{}}).
+\newblock One SNARE complex is sufficient for membrane fusion.
+\newblock {\rm Nat Struct Mol Biol } \emph{17}, 358--64.
+
+\bibitem[Wilhelm {\rm et~al.}, 2014]{Wilhelm:Science:2014}
+Wilhelm, B.~G., Mandad, S., Truckenbrodt, S., Kr\"{o}hnert, K., Sch\"{a}fer,
+  C., Rammner, B., Koo, S.~J., Classen, G.~A., Krauss, M., Haucke, V., Urlaub,
+  H.  and Rizzoli, S.~O. (2014{\rm{}}).
+\newblock Composition of isolated synaptic boutons reveals the amounts of
+  vesicle trafficking proteins.
+\newblock {\rm Science } \emph{344}, 1023--8.
+
+\end{thebibliography}

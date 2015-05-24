@@ -14,6 +14,8 @@ INCLUDE_FILE = "Scene.geometry.mdl"
 
 INCLUDE_FILE = "Scene.mod_surf_regions.mdl"
 
+INCLUDE_FILE = "Scene.release_patterns.mdl"
+
 INSTANTIATE Scene OBJECT
 {
   PresynapticBouton OBJECT PresynapticBouton {}
@@ -31,7 +33,18 @@ INSTANTIATE Scene OBJECT
   {
    SHAPE = Scene.Vesicle[vesicle_surf]
    MOLECULE = CaBS'
-   NUMBER_TO_RELEASE = 55
+   NUMBER_TO_RELEASE = 30
+   RELEASE_PROBABILITY = 1
+  }
+  lgic_rel RELEASE_SITE
+  {
+   SHAPE = Scene.SpineHead[receptor_region]
+   MOLECULE = LGIC_C'
+   GAUSSIAN_RELEASE_NUMBER
+   {
+        MEAN_NUMBER = 400
+        STANDARD_DEVIATION = 0.3
+      }
    RELEASE_PROBABILITY = 1
   }
 }

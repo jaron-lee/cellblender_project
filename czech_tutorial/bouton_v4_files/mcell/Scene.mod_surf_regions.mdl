@@ -1,0 +1,24 @@
+MODIFY_SURFACE_REGIONS
+{
+  PresynapticBouton[presynaptic_membrane]
+  {
+    SURFACE_CLASS = nt_reflect
+  }
+  PresynapticBouton[presynaptic_shell]
+  {
+    SURFACE_CLASS = nt_absorb
+  }
+  SpineHead[receptor_region]
+  {
+    SURFACE_CLASS = nt_reflect
+  }
+  SpineHead[receptor_shell]
+  {
+    SURFACE_CLASS = nt_absorb
+  }
+  GlialCells[surface]
+  {
+    SURFACE_CLASS = nt_absorb
+  }
+}
+

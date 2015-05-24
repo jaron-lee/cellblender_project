@@ -1,8 +1,0 @@
-REACTION_DATA_OUTPUT
-{
-  STEP=1e-05
-  {COUNT[surf1,WORLD]}=> "./react_data/seed_" & seed & "/surf1.World.dat"
-  {COUNT[vol1,WORLD]}=> "./react_data/seed_" & seed & "/vol1.World.dat"
-  {COUNT[vol2,WORLD]}=> "./react_data/seed_" & seed & "/vol2.World.dat"
-}
-
