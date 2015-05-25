@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{siunitx}
 \usepackage{natbib}
+\usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{enumerate}
 \usepackage{extarrows}
@@ -31,9 +32,10 @@ This paper aims to investigate the calcium buffering aspect of synaptic transmis
 Blender is a 3D graphics modelling software which is free and traditionally used for applications such as digital media, games, visual art. MCell is a cell simulation command line utility which is capable of providing Monte Carlo simulations of a cell at the molecular level. CellBlender is a Blender addon which allows the user to access features within MCell through a Blender interface. Together with the general purpose language Python, this paper utilises these technologies to produce an accessible guide for simulating the calcium buffering and handling at nerve terminals.
 
 The advantages of such an approach are many-fold. Firstly, the user does not need to be familiar with programming through a command line interface to do cellular level modelling, enabling a wider audience to access the power of a simulation environment. Secondly, the simulation results are presented in an animation, which is an information-dense medium and allows the user to quickly interpret the model results.
+
 Finally, once the simulation has been set up, it is an easy task for the user to adapt the model parameters and geometric configurations to answer their scientific questions. 
 
-The steps used to create the model are available at SITE, should the reader attempt to replicate the results.
+All documentation, simulation files, scripts, tutorial instructions and this report can be found at \url{https://github.com/kanilor/cellblender_project}.
 
 \section{Background Information}
 
@@ -95,7 +97,7 @@ In the postsynaptic phase of the simulation, we simulate the vesicle fusion usin
 
 Finally, these two phases are combined to provide a single contiguous simulation of calcium handling at the synaptic terminal.
 
-The instructions are supplied as a PDF document, as well as an IPython Notebook.
+The instructions are supplied as a PDF document, as well as an IPython Notebook. The modelling approach draws heavily from the guide of \cite{Czech:MethodsMolBiol:2009} in the initial setup. However, the guide was written for an earlier iteration of CellBlender called DREAMM. The tutorial document we have provided updates and improves upon that guide for the current CellBlender platform.
 
 \subsection{Scale, Size and Time}
 In order for the simulation to be realistic, the dimensions and units within Blender must match those of the MCell simulation. It is possible to create a shape of any size in Blender, but this size may not be appropriate for the simulation scale.
@@ -201,11 +203,12 @@ From \cite{Bruns:Nature:1995} we have drawn an estimate of 4700 neurotransmitter
 
 From \cite{Stricker:JPhysiol:1996} we have taken the estimate of 100 neurotransmitter receptors. The data was originally taken from a mouse hippocampus. 
 
+CITATION estimated a mean of $750$ vesicles at the bouton; however we have only modelled two due to computing constraints.
+
 From \cite{Wilhelm:Science:2014} we have drawn an estimate of 26000 SNAP-25 proteins in a synapse. There are two SNAP-25 proteins per SNARE complex, and about 750 vesicles in total. From this we can estimate about 15 SNARE complexes per vesicle. 
 
 \cite{Dittrich:BiophysJ:2013} state that the number of calcium ions required to activate a synaptotagmin protein (and hence activate the SNARE complex) is a minimum of 2. They also state that 3 such activated SNARE complexes are required to cause vesicle release. 
 
-CITATION estimated a mean of $750$ vesicles at the bouton; however we have only modelled two due to computing constraints.
 \begin{table}[H]
 \begin{tabular}{lll}
 Parameter & Value & Reference \\ \hline
@@ -221,7 +224,11 @@ Number of vesicles & 750 & CITATION\\
 \section{Results}
 A model of a synaptic connection was implemented according to the documentation in the accompanying reference "A Guide on Modelling Synapses with CellBlender and MCell". This model was created with the intention of making it a useful approximation of reality. To that end, we have drawn model parameters and dimensions from the neuroscience literature, and these are documented above.
 
-The model consists of a single synaptic connection between a presynaptic axonal bouton and a postsynaptic spine head. The bouton contains two vesicles, both of which are considered active or docked. 
+The model consists of a single synaptic connection between a presynaptic axonal bouton and a postsynaptic spine head. The bouton contains two vesicles, both of which are considered active or docked (i.e. ready for release). We run the simulation till the first vesicle is releas.
+
+When the simulation is running, the calcium ions are randomly generated and allowed to permeate through the model. In this particular instance of the simulation, the vesicle activation time was $\SI{461}{\micro\second}$. 
+
+
 \section{Conclusion}
 
 \section{Acknowledgements}
