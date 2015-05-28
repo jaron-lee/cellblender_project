@@ -10,3 +10,11 @@ See the file tutorial_doc.pdf for the technical instructions on how to set up th
 
 ##The IPython Notebook
 The tutorial document will direct the user to some scripts which have been stored in an IPython notebook.
+
+##The Blender Files
+bouton_v3 contains the presynaptic-side simulation files, while bouton_v4 contains the postsynaptic-side simulation files. 
+
+bouton_v5 contains the combined simulation files (which are drawn from the folder viz_combined). This file is the one used for generating figures in the report.
+
+##The Animation Files
+Sample videos have been generated and placed here for a visualisation of the final result. 

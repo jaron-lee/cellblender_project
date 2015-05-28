@@ -41,42 +41,48 @@ All documentation, simulation files, scripts, tutorial instructions and this rep
 
 \subsection{Synaptic Transmission - An Overview}
 \begin{itemize}
-    \item An action potential travels along the membrane of the presynaptic cell until it reaches the synapse.
-    \item This depolarisation causes voltage gated calcium channels to open.
+    \item An action potential propagates along the membrane of the presynaptic cell until it invades the synapse.
+    \item This depolarisation causes voltage-gated calcium channels to open.
     \item Calcium ions flow from the extracellular space into the presynaptic terminal due to the concentration gradient.
-    \item The high calcium concentration activates proteins on neurotransmitter vesicles, causing them to fuse with the synaptic cell membrane and emptying their contents (about 4000 molecules) into the synaptic cleft.
-    \item The neurotransmitter molecules (AMPA, NMDA) bind to their respective receptors on the postsynaptic terminal. At least two neurotransmitter molecules  must bind to the receptor in order for it to activate. Most neurotransmitters are lost to the extracellular environment where they are retrieved by glial cells.
-    \item Activation of a receptor will cause something to occur in the cell. For example, ligand-gated ion channels such as AMPA and NMDA receptors open ion channels which permit sodium, potassium and calcium ions to enter the postsynaptic terminal.
-    \item The influx of ions will cause a change in voltage at the postsynaptic terminal, which produces a postsynaptic potential.
+    \item The entered calcium ions activate proteins (SNARE complex) in the nerve terminal, causing vesicle fusion with the synaptic cell membrane and emptying the contents of the vesicle (about 4700 molecules) into the synaptic cleft.
+    \item The neurotransmitter molecules (glutamate) bind to AMPA or NMDA receptors on the postsynaptic terminal. At least two neurotransmitter molecules  must bind to the receptor in order for it to activate. Neurotransmitter molecules diffuse into the extracellular space and are taken up predominantly by glial cells (astrocytes). 
+    \item Activation of a glutamate receptor causes an influx of ions, predominantly sodium at resting membrane potential. 
+    \item The influx of ions will cause a depolarisation of the dendrite at the postsynaptic terminal, which produces a postsynaptic potential.
 
 \end{itemize}
 
 In our model we describe only the chemical aspects. The electrical aspects (i.e. the action potentials) are not described.
 
 \subsection{Synaptic Structure}
+In this paper we consider the neocortical synapse.
+
 The synapse consists of the presynaptic terminal (the bouton) and the postsynaptic terminal (the spin). 
 
-Axons of neighbouring neurons are interspersed with small swellings along their length, and at the terminal end of the axon. These swellings are termed boutons or axonal varicosities, and at these locations synaptic connections may form. The bouton contains the synaptic vesicles and associated apparatus for vesicle release.
+Axons of neighbouring neurons are interspersed with small swellings along their length, and at the terminal end of the axon. These swellings are termed boutons-en-passant (boutons for short), and at these locations transmitter release may occur. The bouton contains the synaptic vesicles and associated apparatus for vesicle release such as mitochondria, endoplasic reticulum, the presynaptic grid, the calcium and potassiums channels, autoreceptors, vesicular glutamate transporters, excitatory amino acid transporters, etc.
 
-Dendrites of neurons are covered in spines, which are small protrusions consisting of a bulbous head and a thin body, as per \cite{Arellano:FrontNeurosci:2007}. Their primary role is to form excitatory synaptic connections, and as such the spine head region is covered in neurotransmitter receptors.
+Dendrites of excitatory neurons are covered with spines, which are small protrusions consisting of a bulbous head and a thin body, as per \cite{Arellano:FrontNeurosci:2007}. Their primary role is to compartmentalise individual synaptic inputs.
 
 \subsection{Vesicles}
-At each synapse, there are vesicles filled with neurotransmitters. Each vesicle is filled with about 4700 neutrotransmitter molecules, as per \cite{Bruns:Nature:1995}. During synaptic transmission, action potentials induce calcium influx into the bouton and induce vesicle fusion, which causes the vesicle to release its contents across the synaptic cleft.
+At each synapse, there are hundreds of vesicles putatively filled with neurotransmitters. Each vesicle is filled with about 4700 neutrotransmitter molecules, as per \cite{Bruns:Nature:1995}. During synaptic transmission, action potentials induce calcium influx into the bouton and induce vesicle fusion, which causes the vesicle to release its contents across the synaptic cleft.
 
-The majority of vesicles are undocked (not at the presynaptic membrane) and docking is a process which takes several minutes. An estimate by CITATION gives about 250 vesicles in the active docked phase, and 500 vesicles that are undocked.
+The majority of vesicles are not in a state to be released. To do so, vesicles must undergo a maturation and docking process, which requires energy, the involvement of the cytoskeleton, and time. 
 
-Docked vesicles can fuse with the snyaptic membrane. SNARE (soluble N-ethylaleimide-sensitive factor attachment receptor) proteins hold the vesicle in place. The SNARE complex consists of the subunits synaptobrevin, syntaxin and SNAP-25. The SNARE complex acts to 'unzip' the vesicle when an appropriate protein is activated. For our synapse, this protein is synaptotagmin-1, which is receptive to calcium ions. 
+There are different types of vesicle pools, which are characterised by their propensity  to be released. An estimate by CITATION gives about 58 vesicles in the putative readily releasable pool, about 163 vesicles in the recycling pool, and around 500 vesicles in the reserve pool.
 
-Each synaptotagmin-1 unit has four smaller subunits. Each subunit may be activated by a single calcium ion. The consensus on the number of calcium ions required to activate the synaptotagmin-1 unit is 2, according to \cite{Dittrich:BiophysJ:2013}.
+Docked vesicles can fuse with the synaptic membrane at a fast rate. SNARE (soluble N-ethylaleimide-sensitive factor attachment receptor) proteins hold the vesicle in a pre-release state. The SNARE complex is a macromolecular assembly consisting of synaptobrevin (attached to the vesicle membrane), syntaxin (attached the plasma membrane)and two SNAP-25 protein. Together, these form a four-helix bundle. When the appropriate protein is activated, the SNARE complex finishes zipping and induces vesicle fusion. For our synapse, this protein is synaptotagmin-1, which is the putative calcium binding site. 
 
-There is no widely accepted consensus on how many synaptotagmin-1 proteins are required to activate the SNARE complex and cause vesicle fusion. For example, it is cited in \cite{vandenBogaart:NatStructMolBiol:2010} that a single SNARE complex is sufficient for vesicle release. However, \cite{Dittrich:BiophysJ:2013} state that at least three SNARE complexes are required for vesicle release.
+Each synaptotagmin-1 unit has four calcium binding domains. Each domain may be activated by a single calcium ion. The consensus on the number of calcium ions required to activate the synaptotagmin-1 unit is 2, according to \cite{Dittrich:BiophysJ:2013}.
+
+There is no widely accepted consensus on how many synaptotagmin-1 proteins are required to activate the SNARE complex and cause vesicle fusion. \cite{Dittrich:BiophysJ:2013} state that at least three SNARE complexes are required for vesicle release.
 
 Based on the existing literature, we suggest the following compromise. At least two calcium ions must bind to the synaptotagmin protein in order for it to engage with and activate the SNARE complex. A vesicle will require three such activated SNARE complexes in order for vesicle release (or fusion) to occur.
 
 \subsection{Receptors}
 We are interested in investigating the glutamate neurotransmitter, and the corresponding receptors are the AMPA and NDMA receptors.
 
-The AMPA receptor is a heterotetramer, and is composed of four types subunits - GluR1, GluR2, GluR3 and GluR4. It is a fast-opening receptor, with a response time of CITATION.
+The AMPA receptor is a heterotetramer, and is composed of four types subunits - GluR1, GluR2, GluR3 and GluR4. It is a fast-opening receptor, with a response time 10 to 20 times faster than NDMA. AMPA receptors are highly receptive, permitting only sodium and potassium through. The AMPA receptor is the workhorse receptor.
+
+The NMDA receptor is also a tetramer. It is relatively slow, but has a higher conductance. It only comes into action under a cell depolarisation.
 
 \section{The Modelling Approach}
 
@@ -149,7 +155,6 @@ CaBS\_Ca + Ca $\to$ TAG & Second calcium binding to synaptotagmin/SNARE complex 
 NT + LGIC\_C $\to$ LGIC\_O& Neurotransmitter binding to receptor \\
 \end{tabular} 
 \end{table}
-
 
 \subsection{Reaction Specifications}
 We can summarise the model mechanism with chemical reactions. Some of these reactions have been highly simplified for simulation ease.
@@ -241,7 +246,6 @@ The animation files may be found at \url{https://github.com/kanilor/cellblender_
    \caption{State of the synapse immediately after vesicle release}
    \label{fig2}
 \end{figure}
-
 
 \section{Conclusion}
 
