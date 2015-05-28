@@ -60,9 +60,7 @@ Axons of neighbouring neurons are interspersed with small swellings along their 
 
 Dendrites of neurons are covered in spines, which are small protrusions consisting of a bulbous head and a thin body, as per \cite{Arellano:FrontNeurosci:2007}. Their primary role is to form excitatory synaptic connections, and as such the spine head region is covered in neurotransmitter receptors.
 
-
 \subsection{Vesicles}
-
 At each synapse, there are vesicles filled with neurotransmitters. Each vesicle is filled with about 4700 neutrotransmitter molecules, as per \cite{Bruns:Nature:1995}. During synaptic transmission, action potentials induce calcium influx into the bouton and induce vesicle fusion, which causes the vesicle to release its contents across the synaptic cleft.
 
 The majority of vesicles are undocked (not at the presynaptic membrane) and docking is a process which takes several minutes. An estimate by CITATION gives about 250 vesicles in the active docked phase, and 500 vesicles that are undocked.
@@ -224,9 +222,25 @@ Number of vesicles & 750 & CITATION\\
 \section{Results}
 A model of a synaptic connection was implemented according to the documentation in the accompanying reference "A Guide on Modelling Synapses with CellBlender and MCell". This model was created with the intention of making it a useful approximation of reality. To that end, we have drawn model parameters and dimensions from the neuroscience literature, and these are documented above.
 
-The model consists of a single synaptic connection between a presynaptic axonal bouton and a postsynaptic spine head. The bouton contains two vesicles, both of which are considered active or docked (i.e. ready for release). We run the simulation till the first vesicle is releas.
+The model consists of a single synaptic connection between a presynaptic axonal bouton and a postsynaptic spine head. The bouton contains two vesicles, both of which are considered active or docked (i.e. ready for release)
 
-When the simulation is running, the calcium ions are randomly generated and allowed to permeate through the model. In this particular instance of the simulation, the vesicle activation time was $\SI{461}{\micro\second}$. 
+When the simulation is running, the calcium ions are randomly generated and allowed to permeate through the model. In this particular instance of the simulation, the vesicle activation time was $\SI{461}{\micro\second}$, which is about 18 seconds into the video.
+
+The animation files may be found at \url{https://github.com/kanilor/cellblender_project} under the animation files folder.
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[scale = 0.4]{fig1.png} % requires the graphicx package
+   \caption{State of the synapse prior to vesicle release}
+   \label{fig1}
+\end{figure}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[scale = 0.4]{fig2.png} % requires the graphicx package
+   \caption{State of the synapse immediately after vesicle release}
+   \label{fig2}
+\end{figure}
 
 
 \section{Conclusion}

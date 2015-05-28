@@ -1,1 +1,0 @@
-Fatal error: Conflicting ABSORPTIVE and TRANSPARENT properties are simultaneously specified for the same molecule 'NT' on the same wall through the surface classes 'nt_absorb' and 'nt_trans'.

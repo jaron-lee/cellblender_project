@@ -1,0 +1,2 @@
+Fatal error: On line: 13 of file /Users/Jaron/Dropbox/Work 2015/SCNC2103/czech_tutorial/bouton_v2_files/mcell/Scene.mod_surf_regions.mdl
+ATTENTION: region definition allows only one SURFACE_CLASS  statement.

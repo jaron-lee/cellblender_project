@@ -1,0 +1,16 @@
+DEFINE_MOLECULES
+{
+  LGIC_C
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  LGIC_O
+  {
+    DIFFUSION_CONSTANT_2D = 0
+  }
+  NT
+  {
+    DIFFUSION_CONSTANT_3D = 5.3e-06
+  }
+}
+

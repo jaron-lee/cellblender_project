@@ -1,1 +1,0 @@
-Fatal error: Walls are overlapped: wall 73 from 'Scene.PostsynapticReceptor' and wall 153 from 'Scene.PostsynapticReceptor'.

@@ -1,8 +1,0 @@
-MODIFY_SURFACE_REGIONS
-{
-  PresynapticBouton[presynaptic_shell]
-  {
-    SURFACE_CLASS = ca_absorb
-  }
-}
-

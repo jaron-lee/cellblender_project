@@ -1,0 +1,73 @@
+MCell initializing simulation...
+MCell[0]: random sequence 1
+MCell 3.2.1 (commit: 20a3dda  date: Mon, 10 Feb 2014 19:35:00 -0500)
+  Running on bg27.anu.edu.au at Thu May 21 14:51:18 2015
+
+  Copyright (C) 2006 - 2013 by
+    The National Center for Multiscale Modeling of Biological Systems,
+    The Salk Institute for Biological Studies, and
+    Pittsburgh Supercomputing Center, Carnegie Mellon University,
+
+
+**********************************************************************
+MCell development is supported by the NIGMS-funded (P41GM103712)
+National Center for Multiscale Modeling of Biological Systems (MMBioS)
+Please acknowledge MCell in your publications.
+**********************************************************************
+
+Defining molecules with the following theoretical average diffusion distances:
+  l_r_bar=0.00177245385 um for LGIC_C
+  l_r_bar=0 um for LGIC_O
+  l_r_bar=0.164294487 um for NT
+
+
+Reaction probabilities generated for the following reactions:
+	Probability 4.0428e-02 set for LGIC_C{1} + NT{1} -> LGIC_O{1} 
+
+
+
+Surfaces with surface class "nt_trans{1}" are TRANSPARENT for volume molecules  NT{1}.
+
+
+
+Surfaces with surface class "nt_absorb{1}" are ABSORPTIVE for volume molecules  NT{1}.
+
+Creating geometry (this may take some time)
+MCell: world bounding box in microns =
+         [ -0.249667138 -0.250310868 -2.25665998 ] [ 0.250332981 0.249689296 2.32527995 ]
+Creating 125 subvolumes (5,5,5 per axis).
+Creating 1 memory partitions (1,1,1 per axis).
+Instantiating objects...
+Creating walls...
+Creating edges...
+Running simulation.
+Releasing 400 molecules LGIC_C ...  Released 400 LGIC_C from "Scene.lgic_rel" at iteration 0.
+Iterations: 0 of 1000 
+Iterations: 100 of 1000  (328.999 iter/sec)
+Iterations: 200 of 1000  (489.898 iter/sec)
+Releasing 1000 molecules NT ...  Released 1000 NT from "Scene.rel_2" at iteration 295.
+Iterations: 300 of 1000  (144.829 iter/sec)
+Iterations: 400 of 1000  (157.795 iter/sec)
+Iterations: 500 of 1000  (404.137 iter/sec)
+Iterations: 600 of 1000  (245.554 iter/sec)
+Iterations: 700 of 1000  (91.8793 iter/sec)
+Releasing 1000 molecules NT ...  Released 1000 NT from "Scene.rel_1" at iteration 761.
+Iterations: 800 of 1000  (162.266 iter/sec)
+Iterations: 900 of 1000  (212.456 iter/sec)
+Iterations: 1000 of 1000  (340.58 iter/sec)
+Exiting run loop.
+
+Warning: Some molecules had a lifetime short relative to the timestep.
+  Mean lifetime of NT was 21.23 timesteps.
+
+iterations = 1000 ; elapsed time = 0.01 seconds
+Average diffusion jump was 1.00 timesteps
+
+Total number of random number use: 800526
+Total number of ray-subvolume intersection tests: 128598
+Total number of ray-polygon intersection tests: 41894915
+Total number of ray-polygon intersections: 57408
+Initialization CPU time = 0.023922 (user) and 0.005605 (system)
+Simulation CPU time = 2.602892 (user) and 0.499937 (system)
+Total wall clock time = 5 seconds
+Done running.

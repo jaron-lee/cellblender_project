@@ -9,4 +9,4 @@ See the file report_doc.pdf for the scientific overview of the project, the mode
 See the file tutorial_doc.pdf for the technical instructions on how to set up the model in Blender, input the required settings and parameters, and produce a visualisation. Before attempting the tutorial, the user should be have at least a passing familiarity with Blender (at http://www.blender.org/), have completed the CellBlender tutorial (at http://www.mcell.org/tutorials/), and have a working Python and IPython Notebook installation (at http://ipython.org/notebook.html).
 
 ##The IPython Notebook
-The tutorial document will direct the user to some scripts which have been stored in an IPython notebook. Th
+The tutorial document will direct the user to some scripts which have been stored in an IPython notebook.

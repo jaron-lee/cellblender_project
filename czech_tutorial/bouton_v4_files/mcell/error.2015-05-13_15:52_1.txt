@@ -1,3 +1,0 @@
-Fatal error: Failed to create directory './viz_data/seed_00001': File exists
-Fatal error: Failed to create parent directory for ASCII-mode VIZ output.
-Warning: Reaction output was successfully flushed to disk.

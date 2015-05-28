@@ -1,0 +1,16 @@
+DEFINE_SURFACE_CLASSES
+{
+  nt_trans
+  {
+    TRANSPARENT = NT'
+  }
+  nt_absorb
+  {
+    ABSORPTIVE = NT'
+  }
+  nt_reflect
+  {
+    REFLECTIVE = NT'
+  }
+}
+

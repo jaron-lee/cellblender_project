@@ -1,5 +1,0 @@
-DEFINE_REACTIONS
-{
-  NT' + LGIC_C' -> LGIC_O' [1e+07]
-}
-

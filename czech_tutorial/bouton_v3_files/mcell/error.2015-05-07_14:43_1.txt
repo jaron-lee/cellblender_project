@@ -1,3 +1,0 @@
-Fatal error: Failed to create directory './react_data/seed_00001': File exists
-Fatal error: On line: 5 of file /Users/Jaron/Dropbox/Work 2015/SCNC2103/czech_tutorial/bouton_v3_files/mcell/Scene.rxn_output.mdl
-Directory for ./react_data/seed_00001/Ca.World.dat does not exist and could not be created.

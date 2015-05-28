@@ -1,2 +1,0 @@
-Fatal error: On line: 3816 of file /Users/Jaron/Dropbox/Work 2015/SCNC2103/czech_tutorial/bouton_files/mcell/Scene.geometry.mdl
-Region element specifier refers to sides 243...243, but polygon has only 8 sides.

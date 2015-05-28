@@ -1,0 +1,59 @@
+ITERATIONS = 10000
+TIME_STEP = 1e-06
+VACANCY_SEARCH_DISTANCE = 10
+
+INCLUDE_FILE = "Scene.initialization.mdl"
+
+INCLUDE_FILE = "Scene.molecules.mdl"
+
+INCLUDE_FILE = "Scene.surface_classes.mdl"
+
+INCLUDE_FILE = "Scene.reactions.mdl"
+
+INCLUDE_FILE = "Scene.geometry.mdl"
+
+INCLUDE_FILE = "Scene.mod_surf_regions.mdl"
+
+INCLUDE_FILE = "Scene.release_patterns.mdl"
+
+INSTANTIATE Scene OBJECT
+{
+  GlialCells OBJECT GlialCells {}
+  PresynapticBouton OBJECT PresynapticBouton {}
+  SpineHead OBJECT SpineHead {}
+  VGCC OBJECT VGCC {}
+  Vesicle_1 OBJECT Vesicle_1 {}
+  Vesicle_2 OBJECT Vesicle_2 {}
+  rel_2 RELEASE_SITE
+  {
+   SHAPE = SPHERICAL
+   LOCATION = [-0.103387, 0.0112106, 0.0297362]
+   SITE_DIAMETER = 1e-07
+   MOLECULE = NT
+   NUMBER_TO_RELEASE = 4000
+   RELEASE_PROBABILITY = 1
+   RELEASE_PATTERN = rel_2
+  }
+  rel_1 RELEASE_SITE
+  {
+   SHAPE = SPHERICAL
+   LOCATION = [0.106613, -0.0187894, 0.0297362]
+   SITE_DIAMETER = 1e-07
+   MOLECULE = NT
+   NUMBER_TO_RELEASE = 4000
+   RELEASE_PROBABILITY = 1
+   RELEASE_PATTERN = rel_1
+  }
+  lgic_rel RELEASE_SITE
+  {
+   SHAPE = Scene.SpineHead[receptor_region]
+   MOLECULE = LGIC_C'
+   NUMBER_TO_RELEASE = 400
+   RELEASE_PROBABILITY = 1
+  }
+}
+
+sprintf(seed,"%05g",SEED)
+
+INCLUDE_FILE = "Scene.viz_output.mdl"
+
