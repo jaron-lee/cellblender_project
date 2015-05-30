@@ -1,0 +1,17 @@
+\frametitle{Comparison - Support Vector Machine}
+    \begin{itemize}
+        \item For some context, we compared the performance of this sPLDA classifier with a crudely tuned Support Vector Machine (SVM) from the machine learning literature on the same dataset.
+        \item Performance on was very similar.
+    \end{itemize}
+    \begin{Verbatim}[fontsize=\small]
+Fold 1 SVM hyperparameters: {'C': 100.0, 'gamma': 0.0001}
+True: [ True  True False False  True  True  True  True False False  True False]
+Pred: [ True  True False False  True  True  True  True False False  True False]
+Correct: 12/12
+...
+Fold 5 SVM hyperparameters: {'C': 10.0, 'gamma': 0.0001}
+True: [False  True False  True False False False False False  True  True]
+Pred: [False False  True False False False False False False  True  True]
+Correct: 8/11
+Total errors: 5
+    \end{Verbatim}

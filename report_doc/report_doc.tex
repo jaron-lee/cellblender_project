@@ -31,9 +31,7 @@ This paper aims to investigate the calcium buffering aspect of synaptic transmis
 
 Blender is a 3D graphics modelling software which is free and traditionally used for applications such as digital media, games, visual art. MCell is a cell simulation command line utility which is capable of providing Monte Carlo simulations of a cell at the molecular level. CellBlender is a Blender addon which allows the user to access features within MCell through a Blender interface. Together with the general purpose language Python, this paper utilises these technologies to produce an accessible guide for simulating the calcium buffering and handling at nerve terminals.
 
-The advantages of such an approach are many-fold. Firstly, the user does not need to be familiar with programming through a command line interface to do cellular level modelling, enabling a wider audience to access the power of a simulation environment. Secondly, the simulation results are presented in an animation, which is an information-dense medium and allows the user to quickly interpret the model results.
-
-Finally, once the simulation has been set up, it is an easy task for the user to adapt the model parameters and geometric configurations to answer their scientific questions. 
+The advantages of such an approach are many-fold. Firstly, the user does not need to be familiar with programming through a command line interface to do cellular level modelling, enabling a wider audience to access the power of a simulation environment. Secondly, the simulation results are presented in an animation, which is an information-dense medium and allows the user to quickly interpret the model results. Finally, once the simulation has been set up, it is an easy task for the user to adapt the model parameters and geometric configurations to answer their scientific questions. 
 
 All documentation, simulation files, scripts, tutorial instructions and this report can be found at \url{https://github.com/kanilor/cellblender_project}.
 
@@ -45,7 +43,7 @@ All documentation, simulation files, scripts, tutorial instructions and this rep
     \item This depolarisation causes voltage-gated calcium channels to open.
     \item Calcium ions flow from the extracellular space into the presynaptic terminal due to the concentration gradient.
     \item The entered calcium ions activate proteins (SNARE complex) in the nerve terminal, causing vesicle fusion with the synaptic cell membrane and emptying the contents of the vesicle (about 4700 molecules) into the synaptic cleft.
-    \item The neurotransmitter molecules (glutamate) bind to AMPA or NMDA receptors on the postsynaptic terminal. At least two neurotransmitter molecules  must bind to the receptor in order for it to activate. Neurotransmitter molecules diffuse into the extracellular space and are taken up predominantly by glial cells (astrocytes). 
+    \item The neurotransmitter molecules (glutamate) bind to AMPA or NMDA receptors on the postsynaptic terminal. At least two neurotransmitter molecules must bind to the receptor in order for it to activate. Neurotransmitter molecules diffuse into the extracellular space and are taken up predominantly by glial cells (astrocytes). 
     \item Activation of a glutamate receptor causes an influx of ions, predominantly sodium at resting membrane potential. 
     \item The influx of ions will cause a depolarisation of the dendrite at the postsynaptic terminal, which produces a postsynaptic potential.
 \end{itemize}
@@ -125,7 +123,7 @@ In this section we have sought to specify the quantities and parameters used in 
 The model as implemented in the accompanying guide consists of the following components:
 \begin{enumerate} 
     \item Presynaptic bouton
-    \item Spinehead
+    \item Spine head
     \item Voltage-gated calcium channels (2)
     \item Vesicles (2)
     \item Glial cells
@@ -201,11 +199,11 @@ Synaptic cleft width &$\SI{0.023}{\micro\meter}$& \cite{Rollehagen::2015}\\
 \end{table}
 
 \subsubsection{Molecule Quantity Specifications}
-From \cite{Bruns:Nature:1995} we have drawn an estimate of 4700 neurotransmitter molecules per vesicle (in this case the data is drawn from a vesicle containing the glutamate molecule).
+\cite{Bruns:Nature:1995} specify an estimate of 4700 neurotransmitter molecules per vesicle (in this case the data is drawn from a vesicle containing the glutamate molecule).
 
-From \cite{Stricker:JPhysiol:1996} we have taken the estimate of 100 neurotransmitter receptors. The data was originally taken from a mouse hippocampus. 
+From \cite{Stricker:JPhysiol:1996} we have taken the estimate of 100 neurotransmitter receptors. The data was originally taken from a mouse hippocampus.
 
-\cite{Rollehagen::2015} estimated a mean of $750$ vesicles at the bouton; however we have only modelled two due to computing constraints.
+\cite{Rollehagen::2015} estimated a mean of $750$ vesicles at the bouton. We are unable to model such a large number due to computing constraints, but this does not hamper our efforts to produce a realistic model for two reasons. Firstly, over the timeframe of our simulation, the vast majority of these vesicles are not in a releasable state. \cite{rizzoli2005synaptic} suggest that only about 10\% or $75$ vesicles are in the releasable pool. Secondly, there is evidence suggesting that simultaneous vesicle release cannot occur (CITATION).
 
 From \cite{Wilhelm:Science:2014} we have drawn an estimate of 26000 SNAP-25 proteins in a synapse. There are two SNAP-25 proteins per SNARE complex, and about 750 vesicles in total. From this we can estimate about 15 SNARE complexes per vesicle. 
 
@@ -228,7 +226,9 @@ A model of a synaptic connection was implemented according to the documentation 
 
 The model consists of a single synaptic connection between a presynaptic axonal bouton and a postsynaptic spine head. The bouton contains two vesicles, both of which are considered active or docked (i.e. ready for release)
 
-When the simulation is running, the calcium ions are randomly generated and allowed to permeate through the model. In this particular instance of the simulation, the vesicle activation time was $\SI{461}{\micro\second}$, which is about 18 seconds into the video.
+When the simulation is running, the calcium ions are randomly generated and allowed to permeate through the model. The simulation occurs in time steps of $\SI{1}{\micro\second}$. In this particular instance of the simulation, the first vesicle activation time was $\SI{461}{\micro\second}$, and the second vesicle activation time occurs at $\SI{1000}{\micro\second}$. We have run the visualisation for $SI{1600}{\micro\second}$, starting at $\SI{200}{\micro\second}$ into the simulation. 
+
+Note that the model time differs from real time - $\SI{1}{\second}$ in real time is equivalent to $\SI{25}{\micro\second}$ in model time.
 
 The animation files may be found at \url{https://github.com/kanilor/cellblender_project} under the animation files folder.
 

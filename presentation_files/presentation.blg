@@ -1,0 +1,9 @@
+[1] Config.pm:318> INFO - This is Biber 1.8
+[1] Config.pm:321> INFO - Logfile is 'presentation.blg'
+[345] biber-darwin:275> INFO - === Sat May 30, 2015, 22:49:33
+[345] Biber.pm:333> INFO - Reading 'presentation.bcf'
+[598] Biber.pm:630> INFO - Found 5 citekeys in bib section 0
+[671] Biber.pm:3053> INFO - Processing section 0
+[728] Biber.pm:3190> INFO - Looking for bibtex format file '\let \reserved@d = *\def \par' for section 0
+[1705] Utils.pm:185> ERROR - Cannot find '\let \reserved@d = *\def \par'!
+[1705] Biber.pm:109> INFO - ERRORS: 1
