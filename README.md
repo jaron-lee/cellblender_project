@@ -9,7 +9,7 @@ See the file report_doc.pdf for the scientific overview of the project, the mode
 See the file tutorial_doc.pdf for the technical instructions on how to set up the model in Blender, input the required settings and parameters, and produce a visualisation. Before attempting the tutorial, the user should be have at least a passing familiarity with Blender (at http://www.blender.org/), have completed the CellBlender tutorial (at http://www.mcell.org/tutorials/), and have a working Python and IPython Notebook installation (at http://ipython.org/notebook.html).
 
 ##The IPython Notebook
-The tutorial document will direct the user to some scripts which have been stored in an IPython notebook.
+The tutorial document will direct the user to some scripts which have been stored in an IPython notebook. To be used in conjunction with the tutorial document.
 
 ##The Blender Files
 bouton_v3 contains the presynaptic-side simulation files, while bouton_v4 contains the postsynaptic-side simulation files. 
@@ -18,3 +18,6 @@ bouton_v5 contains the combined simulation files (which are drawn from the folde
 
 ##The Animation Files
 Sample videos have been generated and placed here for a visualisation of the final result. 
+
+##The Presentation Files
+A Beamer document with the files for a presentation I gave at the Advanced Studies Course conference in Biology.

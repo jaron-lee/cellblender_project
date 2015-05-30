@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex presentation"] 1432991188 "presentation.aux" "presentation.bbl" "presentation" 1432991197
-  "presentation.aux" 1432991194 4343 1e51d5d810143bb8cdc014232bd6f67d ""
+["bibtex presentation"] 1432991188 "presentation.aux" "presentation.bbl" "presentation" 1432994843
+  "presentation.aux" 1432994842 4343 1e51d5d810143bb8cdc014232bd6f67d ""
   "presentation.bcf" 1432990183 90738 33f91e71f6418814c95baa069beb6cd8 ""
   "report_doc.bib" 0 -1 0 ""
   (generated)
-  "presentation.bbl"
   "presentation.blg"
-["pdflatex"] 1432991188 "presentation.tex" "presentation.pdf" "presentation" 1432991197
+  "presentation.bbl"
+["pdflatex"] 1432994840 "presentation.tex" "presentation.pdf" "presentation" 1432994843
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm" 1136768653 1384 4632f5e54900a7dadbb83f555bc61e56 ""
@@ -221,19 +221,21 @@
   "/usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt" 1428652605 3832012 847f6d34d2f2fb2dc0dbb90c16492c84 ""
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
   "fig1.jpg" 1432972895 125203 33f9dc4b0b112a4abe924870b6175ce3 ""
-  "presentation.aux" 1432991194 4343 1e51d5d810143bb8cdc014232bd6f67d ""
+  "fig2.png" 1432993759 89967 60ebc094d351d67a4da4b12986c86059 ""
+  "fig3.png" 1432993805 82687 f74e5cf523f802b6d043a3819ab039bc ""
+  "presentation.aux" 1432994842 4343 1e51d5d810143bb8cdc014232bd6f67d ""
   "presentation.bbl" 1432990174 0 d41d8cd98f00b204e9800998ecf8427e "bibtex presentation"
-  "presentation.nav" 1432991194 2403 f2e91a50276adb9b7f7de9f5a6511a1d ""
-  "presentation.out" 1432991194 222 169edf01cd851948aa506bb15e03081e ""
-  "presentation.tex" 1432991180 6348 9a987cf8da5682e0d6926ae7062f6fb1 ""
+  "presentation.nav" 1432994842 2403 f2e91a50276adb9b7f7de9f5a6511a1d ""
+  "presentation.out" 1432994842 222 169edf01cd851948aa506bb15e03081e ""
+  "presentation.tex" 1432994839 6435 68f2e23b14d71dca84757feead45a385 ""
   (generated)
-  "presentation.out"
+  "presentation.vrb"
+  "presentation.run.xml"
   "presentation.aux"
   "presentation.toc"
-  "presentation.nav"
-  "presentation.snm"
-  "presentation.log"
-  "presentation.run.xml"
-  "presentation.vrb"
   "presentation.bcf"
+  "presentation.log"
+  "presentation.nav"
+  "presentation.out"
+  "presentation.snm"
   "presentation.pdf"

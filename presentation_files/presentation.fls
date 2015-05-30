@@ -371,6 +371,12 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT fig1.jpg
 INPUT ./fig1.jpg
 INPUT ./fig1.jpg
+INPUT fig2.png
+INPUT ./fig2.png
+INPUT ./fig2.png
+INPUT fig3.png
+INPUT ./fig3.png
+INPUT ./fig3.png
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
