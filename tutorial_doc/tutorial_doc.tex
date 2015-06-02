@@ -9,7 +9,7 @@
 \usepackage{float}
 \usepackage{ifthen}
 \usepackage{graphicx}
-
+\usepackage{hyperref}
 \def\bs{\char'134 } % backslash in \tt font.
 \newcommand{\ie}{i.\,e.,}
 \newcommand{\eg}{e.\,g..}
@@ -30,7 +30,7 @@
 \maketitle
 
 \begin{abstract}
-This guide aims to provide an introduction to modelling with CellBlender and MCell. Upon completion the reader will have constructed a working model of calcium homeostasis at a synaptic connection.
+This guide aims to provide an introduction to modelling with CellBlender and MCell. Upon completion the reader will have constructed a working model of transmitter release at a synaptic terminal.
 \end{abstract}
 
 %\marginlabel{Start Blender}
@@ -39,10 +39,11 @@ This guide aims to provide an introduction to modelling with CellBlender and MCe
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
+This guide details the steps taken to produce a model of a nerve terminal, as found at \url{https://github.com/kanilor/cellblender_project}.
 
+It is expected that the user be familiar with introductory Blender and Python, and has completed the tutorials as per the README document on the website above.
 
 \section{Pre- and Postsynaptic Geometry with Blender}
-This section follows the paper written by Czech et. al. closely. It is expected that users will have familiarised themselves with Blender, and have read the MCell - CellBlender guide online.
 
 \subsection{Creating a Spine Head}
 
@@ -186,11 +187,13 @@ CellBlender will assign each molecule a certain colour automatically. If you wan
 
 
 \subsection{Making Copies of the Model}
-At this stage, we have completed the model geometry - all the Blender objects have been set up for simulation. Make a copy of the file  (File -> Save As) by saving it under another name. One copy will be used in the next section (Simulation of the Presynaptic Phase) while the other will be used in the section after (Simulation of the Postsynaptic Phase).
+At this stage, we have completed the model geometry - all the Blender objects have been set up for simulation. Make a copy of the file  (File -> Save As) by saving it under another name. One copy will be used in the next section (Phase I Simulation) while the other will be used in the section after (Phase II Simulation).
 
-\section{Simulation using the CellBlender Interface - Presynaptic Phase}
+Phase I deals with the diffusion of calcium, the triggering of the SNAREpin mechanisms, and the fusion times of the vesicles, while Phase II deals with the release of neurotransmitter and the binding to receptors.
 
-In this section, we simulate the activation of the vesicles via a SNARE complex calcium activation mechanism. We record the release times by creating tags for the activated SNARE complexes. Through an external Python script we record these times in preparation for the next phase.
+\section{Simulation using the CellBlender Interface - Phase I}
+
+In this section, we simulate the fusion of the vesicles via a SNAREpin activation mechanism. We record the release times by creating tags for the 'fused' vesicles. Through an external Python script we record these times in preparation for the next phase.
 
 
 \subsection{Specification of Molecules}
@@ -244,7 +247,7 @@ For this section, we will create a surface class called 'ca\_absorb'. It will af
  
 Once the above instructions are complete, skip ahead and complete all the instructions under 'Preparing for Simulation' . Then, save the file and quit.
 
-\section{Simulating using the CellBlender Interface - Postsynaptic Phase}
+\section{Simulating using the CellBlender Interface - Phase II}
 In this phase, we simulate the timed release of neurotransmitter molecules and their subsequent interaction with the receptor region on the spine head. The release times are obtained from the first phase of our simulation.
 
 Complete the following instructions in the second copy of the Blender geometry.
@@ -283,6 +286,25 @@ Under 'Reaction Output Settings', add an item for each molecule (should end up w
 Ensure that the data is saved before continuing.
 
 Refer to the IPython Notebook which contains the remainder of the instructions. These instructions are also integrated with scripts which perform backend tasks.
+
+\section{Rendering}
+Once the simulation is complete, the reader may wish to render their results to produce an animation of their model.
+
+First, orientate the viewport to the view which is to be rendered.
+
+Then, add a camera (Add $\to$ Camera). Right-click it to select, and then select the 'Align Active Camera to View' option (shortcut: Crtl Atl Numpad 0).
+
+Next, click on the 'Render' pane. The following settings are the ones used to generate the animation files; however, the appropriate settings will depend on the computer used to generate the render. For example, it is not necessary to render all the frames - a subset can be selected if so desired.
+
+\begin{figure}[H]
+    \includegraphics[scale=0.5]{render1.png}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[scale=0.5]{render2.png}
+\end{figure}
+
+Scroll down to 'Output' and select an appropriate folder. Scroll up to the top and hit 'Animation; then wait. This will take a while. 
 
 \section{Troubleshooting}
 \marginlabel{Simulation doesn't run} First, under 'Run Simulation' ensure that both output and error logs are being sent to file. Inspection of the error log in particular should reveal the cause of the issue. The most common error is a failure to properly assign a surface region to a Blender object - ensure that all regions are properly assigned before commencing a simulation run.

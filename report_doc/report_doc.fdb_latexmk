@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex report_doc"] 1432815381 "report_doc.aux" "report_doc.bbl" "report_doc" 1432815537
+["bibtex report_doc"] 1433214907 "report_doc.aux" "report_doc.bbl" "report_doc" 1433214911
   "/usr/local/texlive/2014/texmf-dist/bibtex/bst/cell/cell.bst" 1292460122 35907 d52b0d1f6732ee91fed2bfe867d468e5 ""
-  "report_doc.aux" 1432815536 4970 8884712198f20af28428d662b27d5fbf ""
+  "report_doc.aux" 1433214910 5972 a68e0be48b37417479859021162b39bf ""
   "report_doc.bcf" 0 -1 0 ""
-  "report_doc.bib" 1432813603 28963 56690d6f8540cc2794795a10ca9f4b3a ""
+  "report_doc.bib" 1433214821 35451 7bb8a2c23491da26242f3d4e164f9889 ""
   (generated)
   "report_doc.bbl"
   "report_doc.blg"
-["pdflatex"] 1432815534 "report_doc.tex" "report_doc.pdf" "report_doc" 1432815537
+["pdflatex"] 1433214908 "report_doc.tex" "report_doc.pdf" "report_doc" 1433214911
   "/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1136768653 1536 b3387106d9afecbfe14bde2de6eadf47 ""
@@ -71,7 +71,6 @@
   "/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty" 1362954379 4082 502152465aedb8f6a3c4b0b7c0fa8ae5 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty" 1362954379 2637 846ebe982d3549c7ede7ce135456f54a ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls" 1399675188 20496 66dd832c447553f6776fbeac03bb0580 ""
-  "/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd" 1399675188 2044 e100908319f12bdc42d217e63116726d ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo" 1399675188 8967 546f1b177fd18efd7ad74d77a7bdac64 ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd" 1399675188 2005 93bd6bd567069079fb8ff3cfd3ec04bb ""
   "/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict" 1279125320 3435 0a4d096dde3f8fe682c2aedd33b8137d ""
@@ -118,10 +117,11 @@
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
   "fig1.png" 1432787823 60623 7f48b560ccef628561e8d02aeb40342d ""
   "fig2.png" 1432787836 133913 2e23eb3bbafac5cfd407e42f0f10d168 ""
-  "report_doc.aux" 1432815536 4970 8884712198f20af28428d662b27d5fbf ""
-  "report_doc.bbl" 1432815382 2847 f2c29bb6f6af2e5e63e702e1e60967f8 "bibtex report_doc"
-  "report_doc.out" 1432815536 1234 dd9b4b7b44b64bc0e91125bf8264a505 ""
-  "report_doc.tex" 1432815533 23455 c472cb3d1add9c862e1d366e23d3099f ""
+  "report_doc.aux" 1433214910 5972 a68e0be48b37417479859021162b39bf ""
+  "report_doc.bbl" 1433214908 4451 f15f774976fdfebffc0276a3f052d3ed "bibtex report_doc"
+  "report_doc.out" 1433214910 1389 cf2bb78f9df1c12845ae01f4bf066238 ""
+  "report_doc.tex" 1433214883 31853 c653df00ec3798d31ba45048d69d1c3d ""
+  "side_view.png" 1433132075 54046 2a2b52b8fba4268c958c15d6bfe68347 ""
   (generated)
   "report_doc.out"
   "report_doc.pdf"

@@ -1,5 +1,7 @@
-# Simulating calcium buffering and handling at nerve terminals with CellBlender/MCell
+# Realistic modelling of transmitter release at neocortical nerve terminals using CellBlender and MCell
+
 Files, scripts and documentation from a research project conducted under the supervision of A/Prof Christian Stricker to investigate the use of CellBlender/MCell in simulating calcium handling and buffering at nerve terminals.
+
 These items were submitted in partial fulfilment of the requirements of an Advanced Studies Project undertaken as part of my degree.
 
 ##The Report

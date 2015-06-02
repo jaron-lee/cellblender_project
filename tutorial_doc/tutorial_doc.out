@@ -1,0 +1,24 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Pre- and Postsynaptic Geometry with Blender}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Creating a Spine Head}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Creating a presynaptic bouton}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Adding Axonal and Dendritic Extensions}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Add Synaptic Vesicles with Regions for Calcium Binding}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Defining region for voltage-gated calcium channels \(VGCC\)}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.6}{Defining region for postsynaptic receptors}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.7}{Adding Objects to CellBlender}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.8}{Editing Model Object Appearance}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.9}{Making Copies of the Model}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{Simulation using the CellBlender Interface - Phase I}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{Specification of Molecules}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.2}{Define Reactions between Molecules}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.3}{Adding Molecules to Regions}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.4}{Modifying and Defining Surface Classes}{section.3}% 16
+\BOOKMARK [1][-]{section.4}{Simulating using the CellBlender Interface - Phase II}{}% 17
+\BOOKMARK [2][-]{subsection.4.1}{Glial Cell Proxy}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Specification of Molecules}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.3}{Define Reactions between Molecules}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.4}{Modifying and Defining Surface Classes}{section.4}% 21
+\BOOKMARK [1][-]{section.5}{Preparing for Simulation}{}% 22
+\BOOKMARK [1][-]{section.6}{Rendering}{}% 23
+\BOOKMARK [1][-]{section.7}{Troubleshooting}{}% 24

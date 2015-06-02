@@ -1,4 +1,5 @@
 \documentclass{beamer}
+\usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{tabularx}
 \usepackage{graphicx}
@@ -13,7 +14,6 @@
 
 \usepackage{listings}
 \usepackage{color}
-
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -39,7 +39,7 @@
 
 \begin{document}
 \begin{frame}
-\title{\textbf{Simulating calcium handling and buffering at nerve terminals with CellBlender/MCell}}
+\title{\textbf{Realistic modelling of transmitter release at neocortical nerve terminals using CellBlender and MCell}}
 \author{Jaron Lee}
 \maketitle
 \end{frame}
@@ -49,7 +49,7 @@
 {
     \frametitle{Motivation of this project}
     \begin{itemize}
-        \item Modelling in biology is important - widespread applications
+        \item Modelling in biology is important - narrowing down the scientific questions, predicting experimental outcomes, providing hypotheses for results
         \item Modelling in biology is difficult - requires skills and knowledge which fall outside biology itself
     \end{itemize}
 }
@@ -58,31 +58,33 @@
 {
     \frametitle{Goals of this project}
     \begin{itemize}
-        \item Develop a thorough understanding of the software, biology
-        \item Implement a working visualisation of calcium action at nerve terminals 
-        \item Parameterise the model to mimic biological conditions where possible 
-        \item Document the process to allow for easy replication 
-    \end{itemize}
-}
-\frame
-{
-    \frametitle{Software}
-    \begin{itemize}
-        \item MCell - background Monte-Carlo simulation command-line tool
-        \item Blender - 3D animation and design software
-        \item CellBlender - interface between Blender and MCell
-        \item Python - general-purpose programming language
+        \item<1->Develop a thorough understanding of the software, biology
+        \item<2->Implement a working visualisation of calcium action at nerve terminals 
+        \item<3->Parameterise the model to mimic biological conditions where possible 
+        \item<4->Document the process to allow for easy replication 
     \end{itemize}
 }
 
+\begin{frame}{Software}
+\begin{columns}[t]
+\column{.5\textwidth}
+\centering
+\includegraphics[width=5cm]{blender.jpeg}\\
+\includegraphics[width=5cm]{python.jpeg}
+\column{.5\textwidth}
+\centering
+\includegraphics[width=5cm]{mcell.jpeg}\\
+CellBlender - an addon written for Blender
+\end{columns}
+\end{frame}
 
 \frame
 {
     \frametitle{Advantages of the approach}
     \begin{itemize}
-        \item The method developed essentially eliminates the need for the user to be proficient in programming 
-        \item Simulation results are presented in animation form - easy to interpret
-        \item Easy to adapt the model to answer different scientific questions
+        \item<1-> Programming-free
+        \item<2-> Simulation results are easy to interpret
+        \item<3-> Easily adaptable model
     \end{itemize}
 }
 \section{Background Information}
@@ -94,6 +96,23 @@
 }
 
 
+\begin{frame}{Synaptic Transmission}
+\begin{columns}
+\begin{column}{0.47\textwidth}
+\begin{enumerate} \tiny
+    \item<1->Action potential depolarises cell and opens VGCCs
+    \item<2->Calcium ions enter and activate SNARE complexes in nerve terminal, causing vesicle fusion
+    \item<3->Neurotransmitters (glutamate) diffuse across the cleft and bind to receptors (AMPA, NMDA)
+    \item<4->Activated receptors allow for an influx of ions, produce a postsynaptic potential
+    \item<5->Excess neurotransmitter are taken up by glial cells to be reused
+\end{enumerate}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+    \includegraphics[width=1\textwidth]{fig1.jpg}
+    \end{column}
+\end{columns}
+\end{frame}
+
 \section{The Modelling Approach}
 \frame
 {
@@ -104,12 +123,35 @@
 
 \frame
 {
-    \frametitle{Presynaptic}
+    \frametitle{Presynaptic Simulation}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
     \begin{itemize}
         \item Simulate calcium ion movement
         \item Simulate calcium binding to SNARE complex (Need two calcium to activate)
         \item Record time of vesicle fusion (require three activated SNARE complexes on a vesicle)
     \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+    \includegraphics[width=1\textwidth]{presynaptic.png}
+    \end{column}
+\end{columns}
+}
+
+\frame
+{
+    \frametitle{Postsynaptic}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+    \begin{itemize}
+        \item Simulate diffusion of neurotransmitter across synaptic cleft 
+        \item Simulate activation of neurotransmitter receptors 
+    \end{itemize}
+    \end{column}
+\begin{column}{0.5\textwidth}
+    \includegraphics[width=1\textwidth]{postsynaptic.png}
+    \end{column}
+    \end{columns}
 }
 
 \frame
@@ -123,13 +165,13 @@
 
 \begin{frame}{Model Components}
 \begin{columns}
-    \begin{column}{0.47\textwidth}
+\begin{column}{0.47\textwidth}
 \begin{enumerate} 
-    \item Presynaptic bouton 
-    \item Spine head
-    \item Voltage-gated calcium channels (2)
-    \item Vesicles (2)
-    \item Glial cells
+    \item<1->Presynaptic bouton 
+    \item<2->Spine head
+    \item<3->Voltage-gated calcium channels (2)
+    \item<4->Vesicles (2)
+    \item<5->Glial cells
 \end{enumerate}
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -141,18 +183,18 @@
 \frame{
     \frametitle{Model Molecules}
 \begin{enumerate}
-    \item VGCC - the calcium channels responsible for permitting flow of calcium into bouton. Has open and closed states.
-    \item Ca - calcium ion
-    \item CaBS - a SNARE complex which has a single calcium ion bound
-    \item TAG - a SNARE complex which has two calcium ions bound
-    \item NT - a neurotransmitter molecule (represents glutamate)
-    \item LGIC - a neurotransmitter receptor residing on spine head (receptive to NT). Has open and closed states.
+    \item<1->VGCC - the calcium channels responsible for permitting flow of calcium into bouton. Has open and closed states.
+    \item<2->Ca - calcium ion
+    \item<3->CaBS - a SNARE complex which has a single calcium ion bound
+    \item<4->TAG - a SNARE complex which has two calcium ions bound
+    \item<5->NT - a neurotransmitter molecule (represents glutamate)
+    \item<6->LGIC - a neurotransmitter receptor residing on spine head (receptive to NT). Has open and closed states.
 \end{enumerate}
 }
 
 \frame
 {
-    \frametitle{Model Equations}
+\frametitle{Model Equations}
 \begin{table}[H]
 \begin{tabular}{ll}
 Equation & Description \\ \hline
@@ -171,11 +213,13 @@ NT + LGIC\_C $\to$ LGIC\_O& Neurotransmitter binding \\
 \frame
 {
     \frametitle{Model Parameters}
+    Need to calibrate:
     \begin{itemize}
+        \item Rates
         \item Dimensions
         \item Quantities
-        \item Rates
     \end{itemize}
+    to get a realistic model.
 }
 
 \frame
@@ -207,7 +251,18 @@ Number of vesicles & 750 \\
 
 \frame{
     \frametitle{Final Result}
-    See video...
+    \includegraphics[width=1\textwidth]{legend.png}
+}
+
+\frame{
+    \frametitle{Future Outlook}
+    \begin{itemize}
+        \item Improve model details - postsynaptic receptor, VGCCs
+        \item Increase the scale of the model - more vesicles
+        \item Adapt model to different scenarios
+    \end{itemize}
+
+    
 }
 \frame{
     \frametitle{References}

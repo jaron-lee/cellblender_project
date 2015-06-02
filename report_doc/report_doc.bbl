@@ -26,6 +26,19 @@ Dittrich, M., Pattillo, J.~M., King, J.~D., Cho, S., Stiles, J.~R.  and
   release at the neuromuscular junction.
 \newblock {\rm Biophys J } \emph{104}, 2751--63.
 
+\bibitem[Dodge and Rahamimoff, 1967]{Dodge:JPhysiol:1967}
+Dodge, F.~A. and Rahamimoff, R. (1967{\rm{}}).
+\newblock Co-operative action a calcium ions in transmitter release at the
+  neuromuscular junction.
+\newblock {\rm J Physiol } \emph{193}, 419--32.
+
+\bibitem[Kerr {\rm et~al.}, 2008]{Kerr:SiamJSciComput:2008}
+Kerr, R.~A., Bartol, T.~M., Kaminsky, B., Dittrich, M., Chang, J.-C. J.~C.,
+  Baden, S.~B., Sejnowski, T.~J.  and Stiles, J.~R. (2008{\rm{}}).
+\newblock FAST MONTE CARLO SIMULATION METHODS FOR BIOLOGICAL REACTION-DIFFUSION
+  SYSTEMS IN SOLUTION AND ON SURFACES.
+\newblock {\rm SIAM J Sci Comput } \emph{30}, 3126.
+
 \bibitem[Llinas, 1999]{Llinas:TheSquidGiantSynapseAModel:1999}
 Llinas, R. (1999{\rm{}}).
 \newblock {\rm The squid giant synapse : a model for chemical transmission}.
@@ -42,14 +55,35 @@ Rizzoli, S.~O. and Betz, W.~J. (2005{\rm{}}).
 \newblock Synaptic vesicle pools.
 \newblock {\rm Nature Reviews Neuroscience } \emph{6}, 57--69.
 
-\bibitem[Rollehagen and Luebke, 2015]{Rollehagen::2015}
-Rollehagen, A. and Luebke, J. (2015{\rm{}}).
+\bibitem[Rollenhagen and Luebke, 2015]{Rollehagen::2015}
+Rollenhagen, A. and Luebke, J. (2015{\rm{}}).
+\newblock Morphology data on the L5 cortical synapse by personal communication.
 
 \bibitem[Rusakov, 2001]{rusakov2001role}
 Rusakov, D.~A. (2001{\rm{}}).
 \newblock The role of perisynaptic glial sheaths in glutamate spillover and
   extracellular Ca 2+ depletion.
 \newblock {\rm Biophysical Journal } \emph{81}, 1947--1959.
+
+\bibitem[Shao {\rm et~al.}, 1996]{Shao:Science:1996}
+Shao, X., Davletov, B.~A., Sutton, R.~B., S\"{u}dhof, T.~C.  and Rizo, J.
+  (1996{\rm{}}).
+\newblock Bipartite Ca2+-binding motif in C2 domains of synaptotagmin and
+  protein kinase C.
+\newblock {\rm Science } \emph{273}, 248--51.
+
+\bibitem[Stiles and Bartol, 2001]{stiles2001monte}
+Stiles, J.~R. and Bartol, T.~M. (2001{\rm{}}).
+\newblock Computational neuroscience: realistic modeling for experimentalists.
+
+\bibitem[Stiles {\rm et~al.}, 1996]{stiles1996miniature}
+Stiles, J.~R., Van~Helden, D., Bartol, T.~M.  and SALPETER, M.~M.
+  (1996{\rm{}}).
+\newblock Miniature endplate current rise times < 100 s from improved dual
+  recordgs can be modified with passive acetylcholine diffusion from a synaptic
+  vesicle.
+\newblock {\rm Proceedings of the National Academy of Sciences of the United
+  States of America } \emph{93}, 5747--5752.
 
 \bibitem[Stricker {\rm et~al.}, 1996]{Stricker:JPhysiol:1996}
 Stricker, C., Field, A.~C.  and Redman, S.~J. (1996{\rm{}}).
