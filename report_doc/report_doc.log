@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.4.10)  2 JUN 2015 13:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.4.10)  2 JUN 2015 20:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -696,73 +696,74 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \c__siunitx_mathtt_int=\count175
 [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (7.53232pt too wide) in paragraph at lines 62--63
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (7.53232pt too wide) in paragraph at lines 58--59
 []\OT1/cmr/m/n/10 Docked vesi-cles can fuse with the synap-tic mem-brane at a fast rate. SNARE (sol-u-ble N-ethylaleimide-
  []
 
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 69.
+[2]
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 65.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [3] [4] [5] [6] [7]
-Overfull \hbox (7.90387pt too wide) in paragraph at lines 206--215
+Overfull \hbox (7.90387pt too wide) in paragraph at lines 205--214
 [][] 
  []
 
-[8] <fig1.png, id=237, 815.045pt x 605.26125pt>
+[8] <fig1.png, id=238, 815.045pt x 605.26125pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png used on input line 230.
+Package pdftex.def Info: fig1.png used on input line 229.
 (pdftex.def)             Requested size: 326.01222pt x 242.1002pt.
-<fig2.png, id=239, 814.04124pt x 602.25pt>
+<fig2.png, id=240, 814.04124pt x 602.25pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png used on input line 236.
+Package pdftex.def Info: fig2.png used on input line 235.
 (pdftex.def)             Requested size: 325.61072pt x 240.89572pt.
 [9pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.240 
-       <./fig1.png>] <side_view.png, id=246, 723.70375pt x 628.3475pt>
+l.239 
+       <./fig1.png>] <side_view.png, id=247, 723.70375pt x 628.3475pt>
 File: side_view.png Graphic file (type png)
 <use side_view.png>
-Package pdftex.def Info: side_view.png used on input line 243.
+Package pdftex.def Info: side_view.png used on input line 242.
 (pdftex.def)             Requested size: 289.47636pt x 251.33455pt.
 [10pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.250 
+l.249 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.250 
+l.249 
        <./fig2.png> <./side_view.png>] (./report_doc.bbl [11])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
 [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
 (./report_doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
 Package rerunfilecheck Info: File `report_doc.out' has not changed.
-(rerunfilecheck)             Checksum: CF2BB78F9DF1C12845AE01F4BF066238;1389.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
+(rerunfilecheck)             Checksum: 818EB0C242A023A8F73363EF0801032B;1389.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
  ) 
 Here is how much of TeX's memory you used:
- 15433 strings out of 493117
- 298312 string characters out of 6135433
- 348711 words of memory out of 5000000
- 18696 multiletter control sequences out of 15000+600000
+ 15434 strings out of 493117
+ 298326 string characters out of 6135433
+ 348750 words of memory out of 5000000
+ 18697 multiletter control sequences out of 15000+600000
  15683 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,20n,35p,10396b,922s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on report_doc.pdf (12 pages, 297514 bytes).
+Output written on report_doc.pdf (12 pages, 297983 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
+ 325 PDF objects out of 1000 (max. 8388607)
+ 290 compressed objects within 3 object streams
  54 named destinations out of 1000 (max. 500000)
  184 words of extra memory for PDF output out of 10000 (max. 10000000)
 

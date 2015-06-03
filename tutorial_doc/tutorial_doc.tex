@@ -304,7 +304,9 @@ Next, click on the 'Render' pane. The following settings are the ones used to ge
     \includegraphics[scale=0.5]{render2.png}
 \end{figure}
 
-Scroll down to 'Output' and select an appropriate folder. Scroll up to the top and hit 'Animation; then wait. This will take a while. 
+Scroll down to 'Output' and select an appropriate folder - the default folder is cleared upon logging out. Scroll up to the top and hit 'Animation; then wait. This will take a while.
+
+If the rendering crashes, it may be a good idea to render small sections of the file and stitch them together afterwards.
 
 \section{Troubleshooting}
 \marginlabel{Simulation doesn't run} First, under 'Run Simulation' ensure that both output and error logs are being sent to file. Inspection of the error log in particular should reveal the cause of the issue. The most common error is a failure to properly assign a surface region to a Blender object - ensure that all regions are properly assigned before commencing a simulation run.

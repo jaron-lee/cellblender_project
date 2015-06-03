@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.4.10)  1 JUN 2015 13:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.4.10)  3 JUN 2015 11:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1300,24 +1300,31 @@ Package pdftex.def Info: fig3.png used on input line 181.
 
 ] [33
 
+] [34
+
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 250.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 250.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 251.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 251.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
-) [34
+) [35
 
-] [35
+] <legend.png, id=1133, 786.94pt x 457.71pt>
+File: legend.png Graphic file (type png)
+<use legend.png>
+Package pdftex.def Info: legend.png used on input line 256.
+(pdftex.def)             Requested size: 307.28987pt x 178.72968pt.
+[36
 
-] [36
+ <./legend.png>] [37
 
 ]
-Overfull \hbox (202.80995pt too wide) in paragraph at lines 272--272
+Overfull \hbox (202.80995pt too wide) in paragraph at lines 273--273
 \T1/phv/m/n/10.95 https://classconnection.s3.amazonaws.com/811/flashcards/141811/jpg/synapse21329503162446.jpg  
  []
 
-[37
+[38
 
 ] (./presentation.bbl)
 \tf@nav=\write7
@@ -1329,28 +1336,28 @@ Overfull \hbox (202.80995pt too wide) in paragraph at lines 272--272
 \tf@snm=\write9
 \openout9 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 277.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 277.
 (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 277.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 277.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 169EDF01CD851948AA506BB15E03081E;222.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 277.
  ) 
 Here is how much of TeX's memory you used:
- 26661 strings out of 493117
- 538545 string characters out of 6135433
+ 26668 strings out of 493117
+ 538633 string characters out of 6135433
  598492 words of memory out of 5000000
- 29539 multiletter control sequences out of 15000+600000
+ 29543 multiletter control sequences out of 15000+600000
  37289 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,22n,65p,10400b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on presentation.pdf (37 pages, 439002 bytes).
+Output written on presentation.pdf (38 pages, 502732 bytes).
 PDF statistics:
- 1237 PDF objects out of 1440 (max. 8388607)
- 1151 compressed objects within 12 object streams
- 79 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1269 PDF objects out of 1440 (max. 8388607)
+ 1180 compressed objects within 12 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

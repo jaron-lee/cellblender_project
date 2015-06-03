@@ -424,6 +424,9 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/helvetic/phvr8c.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/vf/adobe/helvetic/phvr8c.vf
+INPUT legend.png
+INPUT ./legend.png
+INPUT ./legend.png
 INPUT presentation.bbl
 INPUT presentation.bbl
 OUTPUT presentation.nav

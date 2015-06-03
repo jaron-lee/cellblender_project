@@ -73,8 +73,8 @@
 \includegraphics[width=5cm]{python.jpeg}
 \column{.5\textwidth}
 \centering
-\includegraphics[width=5cm]{mcell.jpeg}\\
 CellBlender - an addon written for Blender
+\includegraphics[width=5cm]{mcell.jpeg}\\
 \end{columns}
 \end{frame}
 
@@ -100,10 +100,10 @@ CellBlender - an addon written for Blender
 \begin{columns}
 \begin{column}{0.47\textwidth}
 \begin{enumerate} \tiny
-    \item<1->Action potential depolarises cell and opens VGCCs
-    \item<2->Calcium ions enter and activate SNARE complexes in nerve terminal, causing vesicle fusion
+    \item<1->Action potential invades presynaptic cell and opens VGCCs
+    \item<2->Calcium ions enter and activate SNAREpins in nerve terminal, causing vesicle fusion
     \item<3->Neurotransmitters (glutamate) diffuse across the cleft and bind to receptors (AMPA, NMDA)
-    \item<4->Activated receptors allow for an influx of ions, produce a postsynaptic potential
+    \item<4->Activated receptors allow for an influx of ions, produce a postsynaptic potential due to change in potential 
     \item<5->Excess neurotransmitter are taken up by glial cells to be reused
 \end{enumerate}
     \end{column}
@@ -117,19 +117,19 @@ CellBlender - an addon written for Blender
 \frame
 {
     \frametitle{Summary}
-    Two phases - presynaptic and postsynaptic
+    Two phases - Phase I and Phase II
     \includegraphics[width=1\textwidth]{fig2.png}
 }
 
 \frame
 {
-    \frametitle{Presynaptic Simulation}
+    \frametitle{Phase I}
     \begin{columns}
     \begin{column}{0.5\textwidth}
     \begin{itemize}
-        \item Simulate calcium ion movement
-        \item Simulate calcium binding to SNARE complex (Need two calcium to activate)
-        \item Record time of vesicle fusion (require three activated SNARE complexes on a vesicle)
+        \item Simulate calcium ion diffusion - but not the electrophysiology
+        \item Simulate calcium binding to SNAREpins (Need two calcium to activate)
+        \item Record time of vesicle fusion (require three activated SNAREpins on a vesicle)
     \end{itemize}
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -140,7 +140,7 @@ CellBlender - an addon written for Blender
 
 \frame
 {
-    \frametitle{Postsynaptic}
+    \frametitle{Phase II}
     \begin{columns}
     \begin{column}{0.5\textwidth}
     \begin{itemize}
@@ -158,7 +158,7 @@ CellBlender - an addon written for Blender
 { \frametitle{A question}
     \begin{itemize}
         \item Why not do everything in one step?
-        \item The activation of SNARE complexes is randomly determined during the simulation (depends on the movement of calcium ions)
+        \item The activation of SNAREpins is randomly determined during the simulation (depends on the movement of calcium ions)
         \item The release of neurotransmitter must be specified before the simulation is run (due to the way CellBlender defines molecule placement and release)
     \end{itemize}
 }
@@ -169,7 +169,7 @@ CellBlender - an addon written for Blender
 \begin{enumerate} 
     \item<1->Presynaptic bouton 
     \item<2->Spine head
-    \item<3->Voltage-gated calcium channels (2)
+    \item<3->Voltage-gated calcium channel regions (2)
     \item<4->Vesicles (2)
     \item<5->Glial cells
 \end{enumerate}
@@ -185,10 +185,11 @@ CellBlender - an addon written for Blender
 \begin{enumerate}
     \item<1->VGCC - the calcium channels responsible for permitting flow of calcium into bouton. Has open and closed states.
     \item<2->Ca - calcium ion
-    \item<3->CaBS - a SNARE complex which has a single calcium ion bound
-    \item<4->TAG - a SNARE complex which has two calcium ions bound
-    \item<5->NT - a neurotransmitter molecule (represents glutamate)
-    \item<6->LGIC - a neurotransmitter receptor residing on spine head (receptive to NT). Has open and closed states.
+    \item<3->CaBS - a SNARE complex which has no calcium ion bound
+    \item<4->CaBS\_Ca - a SNARE complex which has one calcium ion bound
+    \item<5->TAG - a SNARE complex which has two calcium ions bound
+    \item<6->NT - a neurotransmitter molecule (represents glutamate)
+    \item<7->LGIC - a neurotransmitter receptor residing on spine head (receptive to NT). Has open and closed states.
 \end{enumerate}
 }
 
@@ -258,7 +259,7 @@ Number of vesicles & 750 \\
     \frametitle{Future Outlook}
     \begin{itemize}
         \item Improve model details - postsynaptic receptor, VGCCs
-        \item Increase the scale of the model - more vesicles
+        \item Simulate the electrophysiology of the synapse
         \item Adapt model to different scenarios
     \end{itemize}
 
